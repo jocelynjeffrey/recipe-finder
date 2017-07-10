@@ -1,19 +1,35 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
+import { connect } from 'react-redux';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
+import { getRecipeByName } from './redux/actions/recipe.actions'
+
+const App = props => (
+  <div className="App">
+    <div className="App-header">
+      <h2>Recipe Finder</h2>
+    </div>
+    <p className="App-intro">
+      <button onClick={ () => { props.getRecipeByName('avocado') } }>click me</button>
+      {props.recipeList.map(recipe => <h3 key={recipe.uri}>name: {recipe.label} calories: {recipe.calories}</h3>)}
+    </p>
+  </div>
+);
+
+// export default App;
+
+const mapStateToProps = (state) => {
+  console.log(state)
+  return {
+    recipeList: state.returnedRecipes.list,
   }
 }
 
-export default App;
+const actions = {
+  getRecipeByName,
+}
+
+export default connect(
+  mapStateToProps,
+  actions
+)(App);

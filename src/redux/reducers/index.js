@@ -1,14 +1,22 @@
 import { combineReducers } from 'redux';
 
-import { FETCH_RECIPE } from '../actions/recipe.actions';
+import { RECIPES_RECEIVED_SUCCESS } from '../actions/recipe.actions';
 
-const recipes = (state ='', action) => {
-  if (action.type === FETCH_RECIPE) {
-    return action.payload;
+const DEFAULT_STATE = {
+  list: [],
+  isError: false
+};
+
+const returnedRecipes = (state = DEFAULT_STATE, action) => {
+  if (action.type === RECIPES_RECEIVED_SUCCESS) {
+    console.log('got that food')
+    console.log(action.payload)
+    return {...state, list: action.payload};
   }
-  return state;
+
+    return state;
 }
 
 export default combineReducers({
-  recipes
+  returnedRecipes,
 });

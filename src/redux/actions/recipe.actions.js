@@ -1,12 +1,8 @@
-export const FETCH_RECIPE = 'FETCH_RECIPE';
-export const SET_RECIPE = 'SET_RECIPE';
+export const GET_RECIPES_BY_NAME = 'GET_RECIPES_BY_NAME';
+export const RECIPES_RECEIVED_SUCCESS = 'RECIPES_RECEIVED_SUCCESS';
 
-export const fetchRecipe = id => ({
-  type: FETCH_RECIPE,
-  payload: id,
+export const getRecipeByName = recipeName => ({
+  type: GET_RECIPES_BY_NAME,
+  payload: recipeName,
 });
 
-export const setRecipe = recipe => ({
-  type: SET_RECIPE,
-  payload: recipe
-});
