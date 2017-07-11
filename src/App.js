@@ -2,30 +2,40 @@ import React from 'react';
 import './App.css';
 import { connect } from 'react-redux';
 
-import { getRecipeByName } from './redux/actions/recipe.actions'
+import { getRecipeByName, onTextInputChange } from './redux/actions/recipe.actions'
+
+const SearchComponent = props => (
+  <div>
+    <input
+      value={props.textInput}
+      onChange={e => props.inputChange(e.target.value)}
+    />
+    <button onClick={ () => {props.getRecipeByName(props.textInput)} }>click me</button>
+  </div>
+);
 
 const App = props => (
   <div className="App">
     <div className="App-header">
       <h2>Recipe Finder</h2>
     </div>
-    <p className="App-intro">
-      <button onClick={ () => { props.getRecipeByName('avocado') } }>click me</button>
+    <div className="App-intro">
+      <SearchComponent {...props} />
       {props.recipeList.map(recipe => <h3 key={recipe.uri}>name: {recipe.label} calories: {recipe.calories}</h3>)}
-    </p>
+    </div>
   </div>
 );
 
-// export default App;
-
 const mapStateToProps = (state) => {
-  console.log(state)
+  console.log('state', state)
   return {
+    textInput: state.textInput,
     recipeList: state.returnedRecipes.list,
   }
 }
 
 const actions = {
+  inputChange: onTextInputChange,
   getRecipeByName,
 }
 
