@@ -10,7 +10,17 @@ const SearchComponent = props => (
       value={props.textInput}
       onChange={e => props.inputChange(e.target.value)}
     />
-    <button onClick={ () => {props.getRecipeByName(props.textInput)} }>click me</button>
+    <button onClick={ () => {props.getRecipeByName(props.textInput)} }>Search</button>
+  </div>
+);
+
+const ResultsList = props => (
+  <div>
+    {props.recipeList.map(recipe =>
+      <div className='result' key={recipe.uri}>
+        <h3>{recipe.label} </h3>
+      </div>
+    )}
   </div>
 );
 
@@ -19,9 +29,9 @@ const App = props => (
     <div className="App-header">
       <h2>Recipe Finder</h2>
     </div>
-    <div className="App-intro">
+    <div>
       <SearchComponent {...props} />
-      {props.recipeList.map(recipe => <h3 key={recipe.uri}>name: {recipe.label} calories: {recipe.calories}</h3>)}
+      <ResultsList {...props} />
     </div>
   </div>
 );
