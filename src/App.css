@@ -35,6 +35,16 @@
   box-sizing: border-box;
 }
 
+.result {
+  width: 100%;
+  background-color: #fff;
+  border: none;
+}
+
+.result:hover {
+  background-color: lightblue;
+}
+
 .details-component {
   border: 1px solid orange;
   width: 50%;
