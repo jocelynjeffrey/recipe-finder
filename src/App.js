@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { getRecipeByName, onTextInputChange } from './redux/actions/recipe.actions'
 
 const SearchComponent = props => (
-  <div>
+  <div className="search-component">
     <input
       value={props.textInput}
       onChange={e => props.inputChange(e.target.value)}
@@ -14,8 +14,14 @@ const SearchComponent = props => (
   </div>
 );
 
+const Details = props => (
+  <div className="details-component">
+    'hey'
+  </div>
+);
+
 const ResultsList = props => (
-  <div>
+  <div className="results-component">
     {props.recipeList.map(recipe =>
       <div className='result' key={recipe.uri}>
         <h3>{recipe.label} </h3>
@@ -29,9 +35,10 @@ const App = props => (
     <div className="App-header">
       <h2>Recipe Finder</h2>
     </div>
-    <div>
+    <div className="App-body">
       <SearchComponent {...props} />
       <ResultsList {...props} />
+      <Details {...props} />
     </div>
   </div>
 );
