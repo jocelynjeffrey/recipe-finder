@@ -1,10 +1,7 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .App-header {
@@ -12,12 +9,44 @@
   height: 150px;
   padding: 20px;
   color: white;
+  width: 100%;
 }
 
 .App-intro {
   font-size: large;
 }
 
-.result {
+.App-body {
+  width: 100%;
+  border:1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.search-component {
+  border: 2px solid purple;
+  height: 50px;
+  width: 100%;
+}
+
+.results-component {
   border: 1px solid blue;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.result {
+  width: 100%;
+  background-color: #fff;
+  border: none;
+}
+
+.result:hover {
+  background-color: lightblue;
+}
+
+.details-component {
+  border: 1px solid orange;
+  width: 50%;
+  box-sizing: border-box;
 }
