@@ -16,7 +16,6 @@ const textInput = (state = '', action) => {
 
 const returnedRecipes = (state = DEFAULT_STATE, action) => {
   if (action.type === RECIPES_RECEIVED_SUCCESS) {
-    console.log(action.payload)
     return {...state, list: action.payload};
   }
 

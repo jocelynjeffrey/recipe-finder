@@ -7,10 +7,10 @@ import { getRecipeByName, onTextInputChange } from './redux/actions/recipe.actio
 const SearchComponent = props => (
   <div>
     <input
-      value={ textInput }
+      value={props.textInput}
       onChange={e => props.inputChange(e.target.value)}
     />
-    <button onClick={ () => { props.getRecipe() } }>click me</button>
+    <button onClick={ () => {props.getRecipeByName(props.textInput)} }>click me</button>
   </div>
 );
 
@@ -20,23 +20,23 @@ const App = props => (
       <h2>Recipe Finder</h2>
     </div>
     <div className="App-intro">
-      <SearchComponent getRecipe={props.getRecipeByName} inputChange={props.onTextInputChange} />
+      <SearchComponent {...props} />
       {props.recipeList.map(recipe => <h3 key={recipe.uri}>name: {recipe.label} calories: {recipe.calories}</h3>)}
     </div>
   </div>
 );
 
 const mapStateToProps = (state) => {
-  console.log(state)
+  console.log('state', state)
   return {
-    recipeList: state.returnedRecipes.list,
     textInput: state.textInput,
+    recipeList: state.returnedRecipes.list,
   }
 }
 
 const actions = {
+  inputChange: onTextInputChange,
   getRecipeByName,
-  onTextInputChange,
 }
 
 export default connect(
