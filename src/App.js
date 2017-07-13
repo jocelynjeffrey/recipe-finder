@@ -1,14 +1,13 @@
 import React from 'react';
 import './App.css';
 import { connect } from 'react-redux';
-
 import { getRecipeByName, onTextInputChange, showRecipeDetails } from './redux/actions/recipe.actions'
 
 const SearchComponent = props => (
   <div className="search-component">
     <input
       value={props.textInput}
-      onChange={e => props.inputChange(e.target.value)}
+      onChange={e => props.onTextInputChange(e.target.value)}
     />
     <button onClick={ () => {props.getRecipeByName(props.textInput)} }>Search</button>
   </div>
@@ -29,7 +28,6 @@ const Details = props => {
   return <p>select a recipe</p>
 
 }
-
 
 const ResultsList = props => (
   <div className="results-component">
@@ -60,14 +58,14 @@ const App = props => (
 const mapStateToProps = (state) => {
   console.log('state', state)
   return {
-    textInput: state.textInput,
-    recipeList: state.returnedRecipes.list,
-    selectedRecipe: state.selectedRecipeDetails.selectedRecipe,
+    textInput: state.inputChange.textInput,
+    recipeList: state.recipe.list,
+    selectedRecipe: state.recipe.selectedRecipe,
   }
 }
 
 const actions = {
-  inputChange: onTextInputChange,
+  onTextInputChange,
   getRecipeByName,
   showRecipeDetails,
 }
