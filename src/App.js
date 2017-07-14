@@ -18,6 +18,7 @@ const Details = props => {
     return <div className="details-component">
       <h2>{props.selectedRecipe.label}</h2>
       <img src={props.selectedRecipe.image} />
+      <h3>Ingredients</h3>
       <ul>
         {props.selectedRecipe.ingredients.map(ingredient =>
             <li>{ingredient.text}</li>
@@ -25,8 +26,7 @@ const Details = props => {
       </ul>
     </div>
   }
-  return <p>select a recipe</p>
-
+  return <span></span>
 }
 
 const ResultsList = props => (
@@ -36,7 +36,7 @@ const ResultsList = props => (
       className='result'
       key={recipe.uri}
       onClick={ () => { props.showRecipeDetails(recipe) } }>
-        <h3>{recipe.label} </h3>
+        {recipe.label}
       </button>
     )}
   </div>
@@ -45,10 +45,10 @@ const ResultsList = props => (
 const App = props => (
   <div className="App">
     <div className="App-header">
-      <h2>Recipe Finder</h2>
+      <h1>Recipe Finder</h1>
     </div>
+    <SearchComponent {...props} />
     <div className="App-body">
-      <SearchComponent {...props} />
       <ResultsList {...props} />
       <Details {...props} />
     </div>
