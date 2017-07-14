@@ -2,51 +2,91 @@
   text-align: center;
   display: flex;
   flex-wrap: wrap;
+  font-size: 16px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
+  background-color: #01848F;
+  height: 70px;
   padding: 20px;
-  color: white;
+  color: #fff;
   width: 100%;
-}
-
-.App-intro {
-  font-size: large;
 }
 
 .App-body {
   width: 100%;
-  border:1px solid red;
   display: flex;
   flex-wrap: wrap;
+  background-color: #fff;
 }
 
 .search-component {
-  border: 2px solid purple;
-  height: 50px;
+  background-color: #E6E7E8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
   width: 100%;
+  font-size: large;
+}
+
+.search-component input {
+  padding: 10px 5px;
+  border: none;
+  width: 40%;
+  max-width: 400px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.search-component button {
+  height: 35px;
+  width: 30%;
+  max-width: 300px;
+  border: none;
+  background-color: #EF4581;
+  font-size: 16px;
+  color: #fff;
 }
 
 .results-component {
-  border: 1px solid blue;
-  width: 50%;
-  box-sizing: border-box;
+  width: 40%;
+  display: block;
 }
 
 .result {
   width: 100%;
-  background-color: #fff;
   border: none;
+  background-color: #E6E7E8;
+  box-sizing: border-box;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 18px 10px;
 }
 
 .result:hover {
-  background-color: lightblue;
+  background-color: #80cbc4;
+}
+
+.result:focus {
+  background-color: #F9A11F;
+  outline: 0;
 }
 
 .details-component {
-  border: 1px solid orange;
-  width: 50%;
+  width: 60%;
   box-sizing: border-box;
+  padding-bottom: 25px;
+}
+
+.details-component img {
+  border: 1px solid #C2C2C4;
+}
+
+.details-component ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
