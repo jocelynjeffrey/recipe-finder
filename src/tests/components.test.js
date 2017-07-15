@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import renderer from 'react-test-renderer';
+import { App } from '../App';
 import Details from '../components/Details';
 import ResultsList from '../components/ResultsList';
 import Search from '../components/Search';
@@ -7,29 +9,38 @@ import { shallow } from 'enzyme';
 
 describe('component tests', function() {
 
-  const props = {
-    list: [],
+  const mockData = {
+    recipeList: [ {label: 'coffee', uri: 1}, {label: 'tea', uri: 2} ],
     isError: false,
-    selectedRecipe: null,
-    inputChange: '',
+    selectedRecipe: {label: 'coffee', calories: 3},
+    textInput: 'pineapple',
   }
 
-  describe('<Details />', function() {
+  describe('<App />', function() {
     it('renders correctly', function() {
-      const div = document.createElement('div');
-      ReactDOM.render(<Details />, div);
+      const wrapper = shallow(<App {...mockData} />);
+      expect(wrapper).toMatchSnapshot();
     });
   });
 
-  describe('<ResultsList />', function() {
-    it('renders a list', function() {
-//needs to map over props.list
+  describe('<Details />', () => {
+    it('renders correctly', () => {
+      const tree = renderer.create(<Details />).toJSON();
+      expect(tree).toMatchSnapshot();
     });
   });
 
-  describe('<Search />', function() {
-    it('renders correctly', function() {
-//needs access to input
+  describe('<ResultsList />', () => {
+    it('renders correctly', () => {
+      const tree = renderer.create(<ResultsList {...mockData} />).toJSON();
+      expect(tree).toMatchSnapshot();
+    });
+  });
+
+  describe('<Search />', () => {
+    it('renders correctly', () => {
+      const tree = renderer.create(<Search />).toJSON();
+      expect(tree).toMatchSnapshot();
     });
   });
 

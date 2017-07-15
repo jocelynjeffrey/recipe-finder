@@ -1,0 +1,481 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`component tests <App /> renders correctly 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    className="App"
+>
+    <div
+        className="App-header"
+    >
+        <h1>
+            Recipe Finder
+        </h1>
+    </div>
+    <Search
+        isError={false}
+        recipeList={
+            Array [
+                Object {
+                  "label": "coffee",
+                  "uri": 1,
+                },
+                Object {
+                  "label": "tea",
+                  "uri": 2,
+                },
+              ]
+        }
+        selectedRecipe={
+            Object {
+                "calories": 3,
+                "label": "coffee",
+              }
+        }
+        textInput="pineapple"
+    />
+    <div
+        className="App-body"
+    >
+        <ResultsList
+            isError={false}
+            recipeList={
+                Array [
+                    Object {
+                      "label": "coffee",
+                      "uri": 1,
+                    },
+                    Object {
+                      "label": "tea",
+                      "uri": 2,
+                    },
+                  ]
+            }
+            selectedRecipe={
+                Object {
+                    "calories": 3,
+                    "label": "coffee",
+                  }
+            }
+            textInput="pineapple"
+        />
+        <Details
+            isError={false}
+            recipeList={
+                Array [
+                    Object {
+                      "label": "coffee",
+                      "uri": 1,
+                    },
+                    Object {
+                      "label": "tea",
+                      "uri": 2,
+                    },
+                  ]
+            }
+            selectedRecipe={
+                Object {
+                    "calories": 3,
+                    "label": "coffee",
+                  }
+            }
+            textInput="pineapple"
+        />
+    </div>
+</div>,
+  "nodes": Array [
+    <div
+      className="App"
+>
+      <div
+            className="App-header"
+      >
+            <h1>
+                  Recipe Finder
+            </h1>
+      </div>
+      <Search
+            isError={false}
+            recipeList={
+                  Array [
+                        Object {
+                          "label": "coffee",
+                          "uri": 1,
+                        },
+                        Object {
+                          "label": "tea",
+                          "uri": 2,
+                        },
+                      ]
+            }
+            selectedRecipe={
+                  Object {
+                        "calories": 3,
+                        "label": "coffee",
+                      }
+            }
+            textInput="pineapple"
+      />
+      <div
+            className="App-body"
+      >
+            <ResultsList
+                  isError={false}
+                  recipeList={
+                        Array [
+                              Object {
+                                "label": "coffee",
+                                "uri": 1,
+                              },
+                              Object {
+                                "label": "tea",
+                                "uri": 2,
+                              },
+                            ]
+                  }
+                  selectedRecipe={
+                        Object {
+                              "calories": 3,
+                              "label": "coffee",
+                            }
+                  }
+                  textInput="pineapple"
+            />
+            <Details
+                  isError={false}
+                  recipeList={
+                        Array [
+                              Object {
+                                "label": "coffee",
+                                "uri": 1,
+                              },
+                              Object {
+                                "label": "tea",
+                                "uri": 2,
+                              },
+                            ]
+                  }
+                  selectedRecipe={
+                        Object {
+                              "calories": 3,
+                              "label": "coffee",
+                            }
+                  }
+                  textInput="pineapple"
+            />
+      </div>
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <Unknown
+        isError={false}
+        recipeList={
+                Array [
+                        Object {
+                          "label": "coffee",
+                          "uri": 1,
+                        },
+                        Object {
+                          "label": "tea",
+                          "uri": 2,
+                        },
+                      ]
+        }
+        selectedRecipe={
+                Object {
+                        "calories": 3,
+                        "label": "coffee",
+                      }
+        }
+        textInput="pineapple"
+/>,
+      "_debugID": 1,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {
+          "isError": false,
+          "recipeList": Array [
+            Object {
+              "label": "coffee",
+              "uri": 1,
+            },
+            Object {
+              "label": "tea",
+              "uri": 2,
+            },
+          ],
+          "selectedRecipe": Object {
+            "calories": 3,
+            "label": "coffee",
+          },
+          "textInput": "pineapple",
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          className="App"
+>
+          <div
+                    className="App-header"
+          >
+                    <h1>
+                              Recipe Finder
+                    </h1>
+          </div>
+          <Search
+                    isError={false}
+                    recipeList={
+                              Array [
+                                        Object {
+                                          "label": "coffee",
+                                          "uri": 1,
+                                        },
+                                        Object {
+                                          "label": "tea",
+                                          "uri": 2,
+                                        },
+                                      ]
+                    }
+                    selectedRecipe={
+                              Object {
+                                        "calories": 3,
+                                        "label": "coffee",
+                                      }
+                    }
+                    textInput="pineapple"
+          />
+          <div
+                    className="App-body"
+          >
+                    <ResultsList
+                              isError={false}
+                              recipeList={
+                                        Array [
+                                                  Object {
+                                                    "label": "coffee",
+                                                    "uri": 1,
+                                                  },
+                                                  Object {
+                                                    "label": "tea",
+                                                    "uri": 2,
+                                                  },
+                                                ]
+                              }
+                              selectedRecipe={
+                                        Object {
+                                                  "calories": 3,
+                                                  "label": "coffee",
+                                                }
+                              }
+                              textInput="pineapple"
+                    />
+                    <Details
+                              isError={false}
+                              recipeList={
+                                        Array [
+                                                  Object {
+                                                    "label": "coffee",
+                                                    "uri": 1,
+                                                  },
+                                                  Object {
+                                                    "label": "tea",
+                                                    "uri": 2,
+                                                  },
+                                                ]
+                              }
+                              selectedRecipe={
+                                        Object {
+                                                  "calories": 3,
+                                                  "label": "coffee",
+                                                }
+                              }
+                              textInput="pineapple"
+                    />
+          </div>
+</div>,
+        "_debugID": 2,
+        "_renderedOutput": <div
+          className="App"
+>
+          <div
+                    className="App-header"
+          >
+                    <h1>
+                              Recipe Finder
+                    </h1>
+          </div>
+          <Search
+                    isError={false}
+                    recipeList={
+                              Array [
+                                        Object {
+                                          "label": "coffee",
+                                          "uri": 1,
+                                        },
+                                        Object {
+                                          "label": "tea",
+                                          "uri": 2,
+                                        },
+                                      ]
+                    }
+                    selectedRecipe={
+                              Object {
+                                        "calories": 3,
+                                        "label": "coffee",
+                                      }
+                    }
+                    textInput="pineapple"
+          />
+          <div
+                    className="App-body"
+          >
+                    <ResultsList
+                              isError={false}
+                              recipeList={
+                                        Array [
+                                                  Object {
+                                                    "label": "coffee",
+                                                    "uri": 1,
+                                                  },
+                                                  Object {
+                                                    "label": "tea",
+                                                    "uri": 2,
+                                                  },
+                                                ]
+                              }
+                              selectedRecipe={
+                                        Object {
+                                                  "calories": 3,
+                                                  "label": "coffee",
+                                                }
+                              }
+                              textInput="pineapple"
+                    />
+                    <Details
+                              isError={false}
+                              recipeList={
+                                        Array [
+                                                  Object {
+                                                    "label": "coffee",
+                                                    "uri": 1,
+                                                  },
+                                                  Object {
+                                                    "label": "tea",
+                                                    "uri": 2,
+                                                  },
+                                                ]
+                              }
+                              selectedRecipe={
+                                        Object {
+                                                  "calories": 3,
+                                                  "label": "coffee",
+                                                }
+                              }
+                              textInput="pineapple"
+                    />
+          </div>
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <Unknown
+    isError={false}
+    recipeList={
+        Array [
+            Object {
+              "label": "coffee",
+              "uri": 1,
+            },
+            Object {
+              "label": "tea",
+              "uri": 2,
+            },
+          ]
+    }
+    selectedRecipe={
+        Object {
+            "calories": 3,
+            "label": "coffee",
+          }
+    }
+    textInput="pineapple"
+/>,
+}
+`;
+
+exports[`component tests <Details /> renders correctly 1`] = `<span />`;
+
+exports[`component tests <ResultsList /> renders correctly 1`] = `
+<div
+  className="results-component"
+>
+  <button
+    className="result"
+    onClick={[Function]}
+  >
+    coffee
+  </button>
+  <button
+    className="result"
+    onClick={[Function]}
+  >
+    tea
+  </button>
+</div>
+`;
+
+exports[`component tests <Search /> renders correctly 1`] = `
+<div
+  className="search-component"
+>
+  <input
+    onChange={[Function]}
+    value={undefined}
+  />
+  <button
+    onClick={[Function]}
+  >
+    Search
+  </button>
+</div>
+`;
