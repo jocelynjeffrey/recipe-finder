@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`component tests <App /> renders correctly 1`] = `
+exports[`component tests <App renders correctly 1`] = `
 ShallowWrapper {
   "complexSelector": ComplexSelector {
     "buildPredicate": [Function],
@@ -19,14 +19,15 @@ ShallowWrapper {
         </h1>
     </div>
     <Search
-        isError={false}
         recipeList={
             Array [
                 Object {
+                  "image": "https://coffee/com/",
                   "label": "coffee",
                   "uri": 1,
                 },
                 Object {
+                  "image": "https://tea/com/",
                   "label": "tea",
                   "uri": 2,
                 },
@@ -35,23 +36,29 @@ ShallowWrapper {
         selectedRecipe={
             Object {
                 "calories": 3,
+                "image": "https://coffee/com/",
+                "ingredients": Array [
+                  "coffee",
+                  "water",
+                ],
                 "label": "coffee",
+                "uri": 1,
               }
         }
-        textInput="pineapple"
     />
     <div
         className="App-body"
     >
         <ResultsList
-            isError={false}
             recipeList={
                 Array [
                     Object {
+                      "image": "https://coffee/com/",
                       "label": "coffee",
                       "uri": 1,
                     },
                     Object {
+                      "image": "https://tea/com/",
                       "label": "tea",
                       "uri": 2,
                     },
@@ -60,20 +67,26 @@ ShallowWrapper {
             selectedRecipe={
                 Object {
                     "calories": 3,
+                    "image": "https://coffee/com/",
+                    "ingredients": Array [
+                      "coffee",
+                      "water",
+                    ],
                     "label": "coffee",
+                    "uri": 1,
                   }
             }
-            textInput="pineapple"
         />
         <Details
-            isError={false}
             recipeList={
                 Array [
                     Object {
+                      "image": "https://coffee/com/",
                       "label": "coffee",
                       "uri": 1,
                     },
                     Object {
+                      "image": "https://tea/com/",
                       "label": "tea",
                       "uri": 2,
                     },
@@ -82,10 +95,15 @@ ShallowWrapper {
             selectedRecipe={
                 Object {
                     "calories": 3,
+                    "image": "https://coffee/com/",
+                    "ingredients": Array [
+                      "coffee",
+                      "water",
+                    ],
                     "label": "coffee",
+                    "uri": 1,
                   }
             }
-            textInput="pineapple"
         />
     </div>
 </div>,
@@ -101,14 +119,15 @@ ShallowWrapper {
             </h1>
       </div>
       <Search
-            isError={false}
             recipeList={
                   Array [
                         Object {
+                          "image": "https://coffee/com/",
                           "label": "coffee",
                           "uri": 1,
                         },
                         Object {
+                          "image": "https://tea/com/",
                           "label": "tea",
                           "uri": 2,
                         },
@@ -117,23 +136,29 @@ ShallowWrapper {
             selectedRecipe={
                   Object {
                         "calories": 3,
+                        "image": "https://coffee/com/",
+                        "ingredients": Array [
+                          "coffee",
+                          "water",
+                        ],
                         "label": "coffee",
+                        "uri": 1,
                       }
             }
-            textInput="pineapple"
       />
       <div
             className="App-body"
       >
             <ResultsList
-                  isError={false}
                   recipeList={
                         Array [
                               Object {
+                                "image": "https://coffee/com/",
                                 "label": "coffee",
                                 "uri": 1,
                               },
                               Object {
+                                "image": "https://tea/com/",
                                 "label": "tea",
                                 "uri": 2,
                               },
@@ -142,20 +167,26 @@ ShallowWrapper {
                   selectedRecipe={
                         Object {
                               "calories": 3,
+                              "image": "https://coffee/com/",
+                              "ingredients": Array [
+                                "coffee",
+                                "water",
+                              ],
                               "label": "coffee",
+                              "uri": 1,
                             }
                   }
-                  textInput="pineapple"
             />
             <Details
-                  isError={false}
                   recipeList={
                         Array [
                               Object {
+                                "image": "https://coffee/com/",
                                 "label": "coffee",
                                 "uri": 1,
                               },
                               Object {
+                                "image": "https://tea/com/",
                                 "label": "tea",
                                 "uri": 2,
                               },
@@ -164,10 +195,15 @@ ShallowWrapper {
                   selectedRecipe={
                         Object {
                               "calories": 3,
+                              "image": "https://coffee/com/",
+                              "ingredients": Array [
+                                "coffee",
+                                "water",
+                              ],
                               "label": "coffee",
+                              "uri": 1,
                             }
                   }
-                  textInput="pineapple"
             />
       </div>
 </div>,
@@ -179,14 +215,15 @@ ShallowWrapper {
       "_compositeType": 2,
       "_context": Object {},
       "_currentElement": <Unknown
-        isError={false}
         recipeList={
                 Array [
                         Object {
+                          "image": "https://coffee/com/",
                           "label": "coffee",
                           "uri": 1,
                         },
                         Object {
+                          "image": "https://tea/com/",
                           "label": "tea",
                           "uri": 2,
                         },
@@ -195,10 +232,697 @@ ShallowWrapper {
         selectedRecipe={
                 Object {
                         "calories": 3,
+                        "image": "https://coffee/com/",
+                        "ingredients": Array [
+                          "coffee",
+                          "water",
+                        ],
                         "label": "coffee",
+                        "uri": 1,
                       }
         }
-        textInput="pineapple"
+/>,
+      "_debugID": 5,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {
+          "recipeList": Array [
+            Object {
+              "image": "https://coffee/com/",
+              "label": "coffee",
+              "uri": 1,
+            },
+            Object {
+              "image": "https://tea/com/",
+              "label": "tea",
+              "uri": 2,
+            },
+          ],
+          "selectedRecipe": Object {
+            "calories": 3,
+            "image": "https://coffee/com/",
+            "ingredients": Array [
+              "coffee",
+              "water",
+            ],
+            "label": "coffee",
+            "uri": 1,
+          },
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 3,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          className="App"
+>
+          <div
+                    className="App-header"
+          >
+                    <h1>
+                              Recipe Finder
+                    </h1>
+          </div>
+          <Search
+                    recipeList={
+                              Array [
+                                        Object {
+                                          "image": "https://coffee/com/",
+                                          "label": "coffee",
+                                          "uri": 1,
+                                        },
+                                        Object {
+                                          "image": "https://tea/com/",
+                                          "label": "tea",
+                                          "uri": 2,
+                                        },
+                                      ]
+                    }
+                    selectedRecipe={
+                              Object {
+                                        "calories": 3,
+                                        "image": "https://coffee/com/",
+                                        "ingredients": Array [
+                                          "coffee",
+                                          "water",
+                                        ],
+                                        "label": "coffee",
+                                        "uri": 1,
+                                      }
+                    }
+          />
+          <div
+                    className="App-body"
+          >
+                    <ResultsList
+                              recipeList={
+                                        Array [
+                                                  Object {
+                                                    "image": "https://coffee/com/",
+                                                    "label": "coffee",
+                                                    "uri": 1,
+                                                  },
+                                                  Object {
+                                                    "image": "https://tea/com/",
+                                                    "label": "tea",
+                                                    "uri": 2,
+                                                  },
+                                                ]
+                              }
+                              selectedRecipe={
+                                        Object {
+                                                  "calories": 3,
+                                                  "image": "https://coffee/com/",
+                                                  "ingredients": Array [
+                                                    "coffee",
+                                                    "water",
+                                                  ],
+                                                  "label": "coffee",
+                                                  "uri": 1,
+                                                }
+                              }
+                    />
+                    <Details
+                              recipeList={
+                                        Array [
+                                                  Object {
+                                                    "image": "https://coffee/com/",
+                                                    "label": "coffee",
+                                                    "uri": 1,
+                                                  },
+                                                  Object {
+                                                    "image": "https://tea/com/",
+                                                    "label": "tea",
+                                                    "uri": 2,
+                                                  },
+                                                ]
+                              }
+                              selectedRecipe={
+                                        Object {
+                                                  "calories": 3,
+                                                  "image": "https://coffee/com/",
+                                                  "ingredients": Array [
+                                                    "coffee",
+                                                    "water",
+                                                  ],
+                                                  "label": "coffee",
+                                                  "uri": 1,
+                                                }
+                              }
+                    />
+          </div>
+</div>,
+        "_debugID": 6,
+        "_renderedOutput": <div
+          className="App"
+>
+          <div
+                    className="App-header"
+          >
+                    <h1>
+                              Recipe Finder
+                    </h1>
+          </div>
+          <Search
+                    recipeList={
+                              Array [
+                                        Object {
+                                          "image": "https://coffee/com/",
+                                          "label": "coffee",
+                                          "uri": 1,
+                                        },
+                                        Object {
+                                          "image": "https://tea/com/",
+                                          "label": "tea",
+                                          "uri": 2,
+                                        },
+                                      ]
+                    }
+                    selectedRecipe={
+                              Object {
+                                        "calories": 3,
+                                        "image": "https://coffee/com/",
+                                        "ingredients": Array [
+                                          "coffee",
+                                          "water",
+                                        ],
+                                        "label": "coffee",
+                                        "uri": 1,
+                                      }
+                    }
+          />
+          <div
+                    className="App-body"
+          >
+                    <ResultsList
+                              recipeList={
+                                        Array [
+                                                  Object {
+                                                    "image": "https://coffee/com/",
+                                                    "label": "coffee",
+                                                    "uri": 1,
+                                                  },
+                                                  Object {
+                                                    "image": "https://tea/com/",
+                                                    "label": "tea",
+                                                    "uri": 2,
+                                                  },
+                                                ]
+                              }
+                              selectedRecipe={
+                                        Object {
+                                                  "calories": 3,
+                                                  "image": "https://coffee/com/",
+                                                  "ingredients": Array [
+                                                    "coffee",
+                                                    "water",
+                                                  ],
+                                                  "label": "coffee",
+                                                  "uri": 1,
+                                                }
+                              }
+                    />
+                    <Details
+                              recipeList={
+                                        Array [
+                                                  Object {
+                                                    "image": "https://coffee/com/",
+                                                    "label": "coffee",
+                                                    "uri": 1,
+                                                  },
+                                                  Object {
+                                                    "image": "https://tea/com/",
+                                                    "label": "tea",
+                                                    "uri": 2,
+                                                  },
+                                                ]
+                              }
+                              selectedRecipe={
+                                        Object {
+                                                  "calories": 3,
+                                                  "image": "https://coffee/com/",
+                                                  "ingredients": Array [
+                                                    "coffee",
+                                                    "water",
+                                                  ],
+                                                  "label": "coffee",
+                                                  "uri": 1,
+                                                }
+                              }
+                    />
+          </div>
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <Unknown
+    recipeList={
+        Array [
+            Object {
+              "image": "https://coffee/com/",
+              "label": "coffee",
+              "uri": 1,
+            },
+            Object {
+              "image": "https://tea/com/",
+              "label": "tea",
+              "uri": 2,
+            },
+          ]
+    }
+    selectedRecipe={
+        Object {
+            "calories": 3,
+            "image": "https://coffee/com/",
+            "ingredients": Array [
+              "coffee",
+              "water",
+            ],
+            "label": "coffee",
+            "uri": 1,
+          }
+    }
+/>,
+}
+`;
+
+exports[`component tests <ResultsList component renders correctly 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    className="results-component"
+>
+    <button
+        className="result"
+        onClick={[Function]}
+    >
+        coffee
+    </button>
+    <button
+        className="result"
+        onClick={[Function]}
+    >
+        tea
+    </button>
+</div>,
+  "nodes": Array [
+    <div
+      className="results-component"
+>
+      <button
+            className="result"
+            onClick={[Function]}
+      >
+            coffee
+      </button>
+      <button
+            className="result"
+            onClick={[Function]}
+      >
+            tea
+      </button>
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <ResultsList
+        recipeList={
+                Array [
+                        Object {
+                          "image": "https://coffee/com/",
+                          "label": "coffee",
+                          "uri": 1,
+                        },
+                        Object {
+                          "image": "https://tea/com/",
+                          "label": "tea",
+                          "uri": 2,
+                        },
+                      ]
+        }
+        selectedRecipe={
+                Object {
+                        "calories": 3,
+                        "image": "https://coffee/com/",
+                        "ingredients": Array [
+                          "coffee",
+                          "water",
+                        ],
+                        "label": "coffee",
+                        "uri": 1,
+                      }
+        }
+/>,
+      "_debugID": 3,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {
+          "recipeList": Array [
+            Object {
+              "image": "https://coffee/com/",
+              "label": "coffee",
+              "uri": 1,
+            },
+            Object {
+              "image": "https://tea/com/",
+              "label": "tea",
+              "uri": 2,
+            },
+          ],
+          "selectedRecipe": Object {
+            "calories": 3,
+            "image": "https://coffee/com/",
+            "ingredients": Array [
+              "coffee",
+              "water",
+            ],
+            "label": "coffee",
+            "uri": 1,
+          },
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 2,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          className="results-component"
+>
+          <button
+                    className="result"
+                    onClick={[Function]}
+          >
+                    coffee
+          </button>
+          <button
+                    className="result"
+                    onClick={[Function]}
+          >
+                    tea
+          </button>
+</div>,
+        "_debugID": 4,
+        "_renderedOutput": <div
+          className="results-component"
+>
+          <button
+                    className="result"
+                    onClick={[Function]}
+          >
+                    coffee
+          </button>
+          <button
+                    className="result"
+                    onClick={[Function]}
+          >
+                    tea
+          </button>
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <ResultsList
+    recipeList={
+        Array [
+            Object {
+              "image": "https://coffee/com/",
+              "label": "coffee",
+              "uri": 1,
+            },
+            Object {
+              "image": "https://tea/com/",
+              "label": "tea",
+              "uri": 2,
+            },
+          ]
+    }
+    selectedRecipe={
+        Object {
+            "calories": 3,
+            "image": "https://coffee/com/",
+            "ingredients": Array [
+              "coffee",
+              "water",
+            ],
+            "label": "coffee",
+            "uri": 1,
+          }
+    }
+/>,
+}
+`;
+
+exports[`component tests <Search component renders correctly 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    className="search-component"
+>
+    <input
+        onChange={[Function]}
+        value={undefined}
+    />
+    <button
+        onClick={[Function]}
+    >
+        Search
+    </button>
+</div>,
+  "nodes": Array [
+    <div
+      className="search-component"
+>
+      <input
+            onChange={[Function]}
+            value={undefined}
+      />
+      <button
+            onClick={[Function]}
+      >
+            Search
+      </button>
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <Search />,
+      "_debugID": 7,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {},
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 4,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          className="search-component"
+>
+          <input
+                    onChange={[Function]}
+                    value={undefined}
+          />
+          <button
+                    onClick={[Function]}
+          >
+                    Search
+          </button>
+</div>,
+        "_debugID": 8,
+        "_renderedOutput": <div
+          className="search-component"
+>
+          <input
+                    onChange={[Function]}
+                    value={undefined}
+          />
+          <button
+                    onClick={[Function]}
+          >
+                    Search
+          </button>
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <Search />,
+}
+`;
+
+exports[`component tests Details component renders correctly 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    className="details-component"
+>
+    <h2>
+        coffee
+    </h2>
+    <img
+        src="https://coffee/com/"
+    />
+    <h3>
+        Ingredients
+    </h3>
+    <ul>
+        <li />
+        <li />
+    </ul>
+</div>,
+  "nodes": Array [
+    <div
+      className="details-component"
+>
+      <h2>
+            coffee
+      </h2>
+      <img
+            src="https://coffee/com/"
+      />
+      <h3>
+            Ingredients
+      </h3>
+      <ul>
+            <li />
+            <li />
+      </ul>
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <Details
+        recipeList={
+                Array [
+                        Object {
+                          "image": "https://coffee/com/",
+                          "label": "coffee",
+                          "uri": 1,
+                        },
+                        Object {
+                          "image": "https://tea/com/",
+                          "label": "tea",
+                          "uri": 2,
+                        },
+                      ]
+        }
+        selectedRecipe={
+                Object {
+                        "calories": 3,
+                        "image": "https://coffee/com/",
+                        "ingredients": Array [
+                          "coffee",
+                          "water",
+                        ],
+                        "label": "coffee",
+                        "uri": 1,
+                      }
+        }
 />,
       "_debugID": 1,
       "_hostContainerInfo": null,
@@ -207,22 +931,28 @@ ShallowWrapper {
         "_reactInternalInstance": [Circular],
         "context": Object {},
         "props": Object {
-          "isError": false,
           "recipeList": Array [
             Object {
+              "image": "https://coffee/com/",
               "label": "coffee",
               "uri": 1,
             },
             Object {
+              "image": "https://tea/com/",
               "label": "tea",
               "uri": 2,
             },
           ],
           "selectedRecipe": Object {
             "calories": 3,
+            "image": "https://coffee/com/",
+            "ingredients": Array [
+              "coffee",
+              "water",
+            ],
             "label": "coffee",
+            "uri": 1,
           },
-          "textInput": "pineapple",
         },
         "refs": Object {},
         "state": null,
@@ -245,167 +975,39 @@ ShallowWrapper {
       "_pendingStateQueue": null,
       "_renderedComponent": NoopInternalComponent {
         "_currentElement": <div
-          className="App"
+          className="details-component"
 >
-          <div
-                    className="App-header"
-          >
-                    <h1>
-                              Recipe Finder
-                    </h1>
-          </div>
-          <Search
-                    isError={false}
-                    recipeList={
-                              Array [
-                                        Object {
-                                          "label": "coffee",
-                                          "uri": 1,
-                                        },
-                                        Object {
-                                          "label": "tea",
-                                          "uri": 2,
-                                        },
-                                      ]
-                    }
-                    selectedRecipe={
-                              Object {
-                                        "calories": 3,
-                                        "label": "coffee",
-                                      }
-                    }
-                    textInput="pineapple"
+          <h2>
+                    coffee
+          </h2>
+          <img
+                    src="https://coffee/com/"
           />
-          <div
-                    className="App-body"
-          >
-                    <ResultsList
-                              isError={false}
-                              recipeList={
-                                        Array [
-                                                  Object {
-                                                    "label": "coffee",
-                                                    "uri": 1,
-                                                  },
-                                                  Object {
-                                                    "label": "tea",
-                                                    "uri": 2,
-                                                  },
-                                                ]
-                              }
-                              selectedRecipe={
-                                        Object {
-                                                  "calories": 3,
-                                                  "label": "coffee",
-                                                }
-                              }
-                              textInput="pineapple"
-                    />
-                    <Details
-                              isError={false}
-                              recipeList={
-                                        Array [
-                                                  Object {
-                                                    "label": "coffee",
-                                                    "uri": 1,
-                                                  },
-                                                  Object {
-                                                    "label": "tea",
-                                                    "uri": 2,
-                                                  },
-                                                ]
-                              }
-                              selectedRecipe={
-                                        Object {
-                                                  "calories": 3,
-                                                  "label": "coffee",
-                                                }
-                              }
-                              textInput="pineapple"
-                    />
-          </div>
+          <h3>
+                    Ingredients
+          </h3>
+          <ul>
+                    <li />
+                    <li />
+          </ul>
 </div>,
         "_debugID": 2,
         "_renderedOutput": <div
-          className="App"
+          className="details-component"
 >
-          <div
-                    className="App-header"
-          >
-                    <h1>
-                              Recipe Finder
-                    </h1>
-          </div>
-          <Search
-                    isError={false}
-                    recipeList={
-                              Array [
-                                        Object {
-                                          "label": "coffee",
-                                          "uri": 1,
-                                        },
-                                        Object {
-                                          "label": "tea",
-                                          "uri": 2,
-                                        },
-                                      ]
-                    }
-                    selectedRecipe={
-                              Object {
-                                        "calories": 3,
-                                        "label": "coffee",
-                                      }
-                    }
-                    textInput="pineapple"
+          <h2>
+                    coffee
+          </h2>
+          <img
+                    src="https://coffee/com/"
           />
-          <div
-                    className="App-body"
-          >
-                    <ResultsList
-                              isError={false}
-                              recipeList={
-                                        Array [
-                                                  Object {
-                                                    "label": "coffee",
-                                                    "uri": 1,
-                                                  },
-                                                  Object {
-                                                    "label": "tea",
-                                                    "uri": 2,
-                                                  },
-                                                ]
-                              }
-                              selectedRecipe={
-                                        Object {
-                                                  "calories": 3,
-                                                  "label": "coffee",
-                                                }
-                              }
-                              textInput="pineapple"
-                    />
-                    <Details
-                              isError={false}
-                              recipeList={
-                                        Array [
-                                                  Object {
-                                                    "label": "coffee",
-                                                    "uri": 1,
-                                                  },
-                                                  Object {
-                                                    "label": "tea",
-                                                    "uri": 2,
-                                                  },
-                                                ]
-                              }
-                              selectedRecipe={
-                                        Object {
-                                                  "calories": 3,
-                                                  "label": "coffee",
-                                                }
-                              }
-                              textInput="pineapple"
-                    />
-          </div>
+          <h3>
+                    Ingredients
+          </h3>
+          <ul>
+                    <li />
+                    <li />
+          </ul>
 </div>,
       },
       "_renderedNodeType": 0,
@@ -418,15 +1020,16 @@ ShallowWrapper {
     "render": [Function],
   },
   "root": [Circular],
-  "unrendered": <Unknown
-    isError={false}
+  "unrendered": <Details
     recipeList={
         Array [
             Object {
+              "image": "https://coffee/com/",
               "label": "coffee",
               "uri": 1,
             },
             Object {
+              "image": "https://tea/com/",
               "label": "tea",
               "uri": 2,
             },
@@ -435,47 +1038,15 @@ ShallowWrapper {
     selectedRecipe={
         Object {
             "calories": 3,
+            "image": "https://coffee/com/",
+            "ingredients": Array [
+              "coffee",
+              "water",
+            ],
             "label": "coffee",
+            "uri": 1,
           }
     }
-    textInput="pineapple"
 />,
 }
-`;
-
-exports[`component tests <Details /> renders correctly 1`] = `<span />`;
-
-exports[`component tests <ResultsList /> renders correctly 1`] = `
-<div
-  className="results-component"
->
-  <button
-    className="result"
-    onClick={[Function]}
-  >
-    coffee
-  </button>
-  <button
-    className="result"
-    onClick={[Function]}
-  >
-    tea
-  </button>
-</div>
-`;
-
-exports[`component tests <Search /> renders correctly 1`] = `
-<div
-  className="search-component"
->
-  <input
-    onChange={[Function]}
-    value={undefined}
-  />
-  <button
-    onClick={[Function]}
-  >
-    Search
-  </button>
-</div>
 `;

@@ -10,37 +10,75 @@ import { shallow } from 'enzyme';
 describe('component tests', function() {
 
   const mockData = {
-    recipeList: [ {label: 'coffee', uri: 1}, {label: 'tea', uri: 2} ],
-    isError: false,
-    selectedRecipe: {label: 'coffee', calories: 3},
-    textInput: 'pineapple',
+    recipeList: [
+      {label: 'coffee', uri: 1, image: 'https://coffee/com/'},
+      {label: 'tea', uri: 2,  image: 'https://tea/com/'}
+    ],
+    selectedRecipe: {
+      label: 'coffee',
+      uri: 1,
+      calories: 3,
+      image: 'https://coffee/com/',
+      ingredients: ['coffee', 'water']
+    },
   }
 
-  describe('<App />', function() {
+  describe('<App', function() {
     it('renders correctly', function() {
       const wrapper = shallow(<App {...mockData} />);
       expect(wrapper).toMatchSnapshot();
     });
   });
 
-  describe('<Details />', () => {
+  describe('Details component', () => {
+    const wrapper = shallow(<Details {...mockData} />)
+
     it('renders correctly', () => {
-      const tree = renderer.create(<Details />).toJSON();
-      expect(tree).toMatchSnapshot();
+      expect(wrapper).toMatchSnapshot();
+    });
+
+    it('should render a list of ingredients', () => {
+      expect(wrapper.find('ul').children().length).toEqual(mockData.recipeList.length);
+    });
+
+    it('should render an image', () => {
+      const image = <img src={mockData.selectedRecipe.image} />;
+      expect(wrapper.contains(image)).toEqual(true);
+
     });
   });
 
-  describe('<ResultsList />', () => {
+  describe('<ResultsList component', () => {
+    const wrapper = shallow(<ResultsList {...mockData} />);
+
     it('renders correctly', () => {
-      const tree = renderer.create(<ResultsList {...mockData} />).toJSON();
-      expect(tree).toMatchSnapshot();
+      expect(wrapper).toMatchSnapshot();
     });
+
+    it('should render the correct number of list elements', () => {
+      expect(wrapper.find('.result').length).toEqual(2);
+    });
+
+    it('should call a method on button click', () => {
+      const mockFunc = jest.genMockFunction();
+      const button = shallow(<button onClick={mockFunc} />)
+      button.simulate('click');
+      expect(mockFunc).toHaveBeenCalled();
+    });
+
   });
 
-  describe('<Search />', () => {
+  describe('<Search component', () => {
     it('renders correctly', () => {
-      const tree = renderer.create(<Search />).toJSON();
-      expect(tree).toMatchSnapshot();
+      const wrapper = shallow(<Search />);
+      expect(wrapper).toMatchSnapshot();
+    });
+
+    it('should call a method on button click', () => {
+      const mockFunc = jest.genMockFunction();
+      const button = shallow(<button onClick={mockFunc} />)
+      button.simulate('click');
+      expect(mockFunc).toHaveBeenCalled();
     });
   });
 
