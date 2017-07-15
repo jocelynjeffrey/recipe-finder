@@ -6,7 +6,7 @@ import ResultsList from './components/ResultsList';
 import { connect } from 'react-redux';
 import { getRecipeByName, onTextInputChange, showRecipeDetails } from './redux/actions/recipe.actions'
 
-const App = props => (
+export const App = props => (
   <div className="App">
     <div className="App-header">
       <h1>Recipe Finder</h1>
