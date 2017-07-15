@@ -81,6 +81,4 @@ describe('component tests', function() {
       expect(mockFunc).toHaveBeenCalled();
     });
   });
-
-
 });
