@@ -2,51 +2,127 @@
   text-align: center;
   display: flex;
   flex-wrap: wrap;
+  font-size: 16px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/*components*/
+button {
+  background-color: #EF4581;
+  font-weight: 700;
+  border: none;
+  font-size: 18px;
+  padding: 10px 5px;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
+  background-color: #01848F;
+  height: 70px;
   padding: 20px;
-  color: white;
+  color: #fff;
   width: 100%;
-}
-
-.App-intro {
-  font-size: large;
 }
 
 .App-body {
   width: 100%;
-  border:1px solid red;
   display: flex;
   flex-wrap: wrap;
+  background-color: #fff;
+  border: 2px solid #E6E7E8;
+}
+
+.App-body.hasError {
+  display: none;
 }
 
 .search-component {
-  border: 2px solid purple;
-  height: 50px;
+  background-color: #E6E7E8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
   width: 100%;
+  font-size: large;
+}
+
+.search-component input {
+  padding: 0 10px;
+  border: none;
+  height: 40px;
+  width: 40%;
+  max-width: 400px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.search-component button {
+  width: 30%;
+  max-width: 300px;
+  color: #fff;
 }
 
 .results-component {
-  border: 1px solid blue;
-  width: 50%;
+  width: 40%;
+  display: block;
   box-sizing: border-box;
+  background-color: #E6E7E8;
 }
 
-.result {
+.results-component .btn {
   width: 100%;
-  background-color: #fff;
   border: none;
+  background-color: #E6E7E8;
+  box-sizing: border-box;
+  font-weight: 700;
+  font-size: 14px;
+  min-height: 50px;
+  height: inherit;
 }
 
-.result:hover {
-  background-color: lightblue;
+.results-component .btn:hover {
+  background-color: #80cbc4;
+}
+
+.results-component .btn:focus {
+  background-color: #F9A11F;
+  outline: 0;
 }
 
 .details-component {
-  border: 1px solid orange;
-  width: 50%;
+  width: 60%;
   box-sizing: border-box;
+  padding-bottom: 25px;
+}
+
+.details-component h3 {
+  padding-top: 20px;
+  margin: 10px 0;
+}
+
+.details-component img {
+  border: 1px solid #C2C2C4;
+}
+
+.details-component .btn {
+  color: #fff;
+  width: 60%;
+  display: block;
+  margin: 30px auto;
+}
+
+.details-component ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.details-component li {
+  padding: 5px 0;
+}
+
+.warning {
+  width: 100%;
+  color: #CB2431;
+  text-align: center;
 }
