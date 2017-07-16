@@ -47,7 +47,7 @@ ShallowWrapper {
         }
     />
     <div
-        className="App-body"
+        className="App-body "
     >
         <ResultsList
             recipeList={
@@ -106,6 +106,34 @@ ShallowWrapper {
             }
         />
     </div>
+    <Warning
+        recipeList={
+            Array [
+                Object {
+                  "image": "https://coffee/com/",
+                  "label": "coffee",
+                  "uri": 1,
+                },
+                Object {
+                  "image": "https://tea/com/",
+                  "label": "tea",
+                  "uri": 2,
+                },
+              ]
+        }
+        selectedRecipe={
+            Object {
+                "calories": 3,
+                "image": "https://coffee/com/",
+                "ingredients": Array [
+                  "coffee",
+                  "water",
+                ],
+                "label": "coffee",
+                "uri": 1,
+              }
+        }
+    />
 </div>,
   "nodes": Array [
     <div
@@ -147,7 +175,7 @@ ShallowWrapper {
             }
       />
       <div
-            className="App-body"
+            className="App-body "
       >
             <ResultsList
                   recipeList={
@@ -206,6 +234,34 @@ ShallowWrapper {
                   }
             />
       </div>
+      <Warning
+            recipeList={
+                  Array [
+                        Object {
+                          "image": "https://coffee/com/",
+                          "label": "coffee",
+                          "uri": 1,
+                        },
+                        Object {
+                          "image": "https://tea/com/",
+                          "label": "tea",
+                          "uri": 2,
+                        },
+                      ]
+            }
+            selectedRecipe={
+                  Object {
+                        "calories": 3,
+                        "image": "https://coffee/com/",
+                        "ingredients": Array [
+                          "coffee",
+                          "water",
+                        ],
+                        "label": "coffee",
+                        "uri": 1,
+                      }
+            }
+      />
 </div>,
   ],
   "options": Object {},
@@ -331,7 +387,7 @@ ShallowWrapper {
                     }
           />
           <div
-                    className="App-body"
+                    className="App-body "
           >
                     <ResultsList
                               recipeList={
@@ -390,6 +446,34 @@ ShallowWrapper {
                               }
                     />
           </div>
+          <Warning
+                    recipeList={
+                              Array [
+                                        Object {
+                                          "image": "https://coffee/com/",
+                                          "label": "coffee",
+                                          "uri": 1,
+                                        },
+                                        Object {
+                                          "image": "https://tea/com/",
+                                          "label": "tea",
+                                          "uri": 2,
+                                        },
+                                      ]
+                    }
+                    selectedRecipe={
+                              Object {
+                                        "calories": 3,
+                                        "image": "https://coffee/com/",
+                                        "ingredients": Array [
+                                          "coffee",
+                                          "water",
+                                        ],
+                                        "label": "coffee",
+                                        "uri": 1,
+                                      }
+                    }
+          />
 </div>,
         "_debugID": 6,
         "_renderedOutput": <div
@@ -431,7 +515,7 @@ ShallowWrapper {
                     }
           />
           <div
-                    className="App-body"
+                    className="App-body "
           >
                     <ResultsList
                               recipeList={
@@ -490,6 +574,34 @@ ShallowWrapper {
                               }
                     />
           </div>
+          <Warning
+                    recipeList={
+                              Array [
+                                        Object {
+                                          "image": "https://coffee/com/",
+                                          "label": "coffee",
+                                          "uri": 1,
+                                        },
+                                        Object {
+                                          "image": "https://tea/com/",
+                                          "label": "tea",
+                                          "uri": 2,
+                                        },
+                                      ]
+                    }
+                    selectedRecipe={
+                              Object {
+                                        "calories": 3,
+                                        "image": "https://coffee/com/",
+                                        "ingredients": Array [
+                                          "coffee",
+                                          "water",
+                                        ],
+                                        "label": "coffee",
+                                        "uri": 1,
+                                      }
+                    }
+          />
 </div>,
       },
       "_renderedNodeType": 0,
@@ -544,14 +656,17 @@ ShallowWrapper {
   "node": <div
     className="results-component"
 >
+    <h2>
+        Select a Recipe
+    </h2>
     <button
-        className="result"
+        className="btn"
         onClick={[Function]}
     >
         coffee
     </button>
     <button
-        className="result"
+        className="btn"
         onClick={[Function]}
     >
         tea
@@ -561,14 +676,17 @@ ShallowWrapper {
     <div
       className="results-component"
 >
+      <h2>
+            Select a Recipe
+      </h2>
       <button
-            className="result"
+            className="btn"
             onClick={[Function]}
       >
             coffee
       </button>
       <button
-            className="result"
+            className="btn"
             onClick={[Function]}
       >
             tea
@@ -662,14 +780,17 @@ ShallowWrapper {
         "_currentElement": <div
           className="results-component"
 >
+          <h2>
+                    Select a Recipe
+          </h2>
           <button
-                    className="result"
+                    className="btn"
                     onClick={[Function]}
           >
                     coffee
           </button>
           <button
-                    className="result"
+                    className="btn"
                     onClick={[Function]}
           >
                     tea
@@ -679,14 +800,17 @@ ShallowWrapper {
         "_renderedOutput": <div
           className="results-component"
 >
+          <h2>
+                    Select a Recipe
+          </h2>
           <button
-                    className="result"
+                    className="btn"
                     onClick={[Function]}
           >
                     coffee
           </button>
           <button
-                    className="result"
+                    className="btn"
                     onClick={[Function]}
           >
                     tea
@@ -870,6 +994,22 @@ ShallowWrapper {
         <li />
         <li />
     </ul>
+    <h3>
+        Calories
+    </h3>
+    <span>
+        3
+    </span>
+    <h3>
+        Source
+    </h3>
+    <span />
+    <button
+        className="btn"
+        href={undefined}
+    >
+        Go to Recipe
+    </button>
 </div>,
   "nodes": Array [
     <div
@@ -888,6 +1028,22 @@ ShallowWrapper {
             <li />
             <li />
       </ul>
+      <h3>
+            Calories
+      </h3>
+      <span>
+            3
+      </span>
+      <h3>
+            Source
+      </h3>
+      <span />
+      <button
+            className="btn"
+            href={undefined}
+      >
+            Go to Recipe
+      </button>
 </div>,
   ],
   "options": Object {},
@@ -990,6 +1146,22 @@ ShallowWrapper {
                     <li />
                     <li />
           </ul>
+          <h3>
+                    Calories
+          </h3>
+          <span>
+                    3
+          </span>
+          <h3>
+                    Source
+          </h3>
+          <span />
+          <button
+                    className="btn"
+                    href={undefined}
+          >
+                    Go to Recipe
+          </button>
 </div>,
         "_debugID": 2,
         "_renderedOutput": <div
@@ -1008,6 +1180,22 @@ ShallowWrapper {
                     <li />
                     <li />
           </ul>
+          <h3>
+                    Calories
+          </h3>
+          <span>
+                    3
+          </span>
+          <h3>
+                    Source
+          </h3>
+          <span />
+          <button
+                    className="btn"
+                    href={undefined}
+          >
+                    Go to Recipe
+          </button>
 </div>,
       },
       "_renderedNodeType": 0,

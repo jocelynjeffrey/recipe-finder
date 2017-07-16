@@ -1,6 +1,13 @@
 import inputReducer from '../redux/reducers/input.reducer.js';
 import recipeReducer from '../redux/reducers/recipe.reducer.js';
 
+const mockInitialState = {
+    isError: false,
+    errorMessage: null,
+    list: [],
+    selectedRecipe: null,
+}
+
 describe('inputReducer', () => {
   it('should return the initial state', () => {
     expect(inputReducer(undefined, {})).toEqual({
@@ -21,11 +28,7 @@ describe('inputReducer', () => {
 
 describe('recipeReducer', () => {
   it('should return the initial state', () => {
-    expect(recipeReducer(undefined, {})).toEqual({
-      list: [],
-      isError: false,
-      selectedRecipe: null,
-    });
+    expect(recipeReducer(undefined, {})).toEqual(mockInitialState);
   });
 
   it('should react to action RECIPES_RECEIVED_SUCCESS', () => {
@@ -34,9 +37,8 @@ describe('recipeReducer', () => {
       type: 'RECIPES_RECEIVED_SUCCESS',
       payload: recipes,
     })).toEqual({
+      ...mockInitialState,
       list: recipes,
-      isError: false,
-      selectedRecipe: null,
     });
   });
 
@@ -44,9 +46,9 @@ describe('recipeReducer', () => {
     expect(recipeReducer(undefined, {
       type: 'RECIPES_RECEIVED_ERROR',
     })).toEqual({
-      list: [],
+      ...mockInitialState,
       isError: true,
-      selectedRecipe: null,
+      errorMessage: {'type': 'RECIPES_RECEIVED_ERROR' }
     });
   });
 
@@ -56,8 +58,7 @@ describe('recipeReducer', () => {
       type: 'SHOW_RECIPE_DETAILS',
       payload: recipe,
     })).toEqual({
-      list: [],
-      isError: false,
+      ...mockInitialState,
       selectedRecipe: recipe,
     });
   });

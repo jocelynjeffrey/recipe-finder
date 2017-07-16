@@ -56,7 +56,7 @@ describe('component tests', function() {
     });
 
     it('should render the correct number of list elements', () => {
-      expect(wrapper.find('.result').length).toEqual(2);
+      expect(wrapper.find('button').length).toEqual(2);
     });
 
     it('should call a method on button click', () => {
