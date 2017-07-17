@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../App.css';
+import FavouritesList from '../FavouritesList';
 
 const ResultsList = props => {
   { if (props.recipeList.length === 0) return null; }
@@ -13,8 +14,8 @@ const ResultsList = props => {
         {recipe.label}
       </button>
     )}
+    <FavouritesList {...props} />
   </div>
 };
-
 
 export default ResultsList;
