@@ -1,3 +1,12 @@
+# RecipeFinder
+A project that uses an API to search for various recipes. :apple:
+
+## Build
+To build:
+```shell
+npm install (yarn install)
+npm run start
+```
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
