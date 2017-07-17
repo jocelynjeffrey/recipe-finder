@@ -22,12 +22,12 @@ ShallowWrapper {
         recipeList={
             Array [
                 Object {
-                  "image": "https://coffee/com/",
+                  "image": "https://coffee.com",
                   "label": "coffee",
                   "uri": 1,
                 },
                 Object {
-                  "image": "https://tea/com/",
+                  "image": "https://tea.com",
                   "label": "tea",
                   "uri": 2,
                 },
@@ -53,12 +53,12 @@ ShallowWrapper {
             recipeList={
                 Array [
                     Object {
-                      "image": "https://coffee/com/",
+                      "image": "https://coffee.com",
                       "label": "coffee",
                       "uri": 1,
                     },
                     Object {
-                      "image": "https://tea/com/",
+                      "image": "https://tea.com",
                       "label": "tea",
                       "uri": 2,
                     },
@@ -81,12 +81,12 @@ ShallowWrapper {
             recipeList={
                 Array [
                     Object {
-                      "image": "https://coffee/com/",
+                      "image": "https://coffee.com",
                       "label": "coffee",
                       "uri": 1,
                     },
                     Object {
-                      "image": "https://tea/com/",
+                      "image": "https://tea.com",
                       "label": "tea",
                       "uri": 2,
                     },
@@ -110,12 +110,12 @@ ShallowWrapper {
         recipeList={
             Array [
                 Object {
-                  "image": "https://coffee/com/",
+                  "image": "https://coffee.com",
                   "label": "coffee",
                   "uri": 1,
                 },
                 Object {
-                  "image": "https://tea/com/",
+                  "image": "https://tea.com",
                   "label": "tea",
                   "uri": 2,
                 },
@@ -150,12 +150,12 @@ ShallowWrapper {
             recipeList={
                   Array [
                         Object {
-                          "image": "https://coffee/com/",
+                          "image": "https://coffee.com",
                           "label": "coffee",
                           "uri": 1,
                         },
                         Object {
-                          "image": "https://tea/com/",
+                          "image": "https://tea.com",
                           "label": "tea",
                           "uri": 2,
                         },
@@ -181,12 +181,12 @@ ShallowWrapper {
                   recipeList={
                         Array [
                               Object {
-                                "image": "https://coffee/com/",
+                                "image": "https://coffee.com",
                                 "label": "coffee",
                                 "uri": 1,
                               },
                               Object {
-                                "image": "https://tea/com/",
+                                "image": "https://tea.com",
                                 "label": "tea",
                                 "uri": 2,
                               },
@@ -209,12 +209,12 @@ ShallowWrapper {
                   recipeList={
                         Array [
                               Object {
-                                "image": "https://coffee/com/",
+                                "image": "https://coffee.com",
                                 "label": "coffee",
                                 "uri": 1,
                               },
                               Object {
-                                "image": "https://tea/com/",
+                                "image": "https://tea.com",
                                 "label": "tea",
                                 "uri": 2,
                               },
@@ -238,12 +238,12 @@ ShallowWrapper {
             recipeList={
                   Array [
                         Object {
-                          "image": "https://coffee/com/",
+                          "image": "https://coffee.com",
                           "label": "coffee",
                           "uri": 1,
                         },
                         Object {
-                          "image": "https://tea/com/",
+                          "image": "https://tea.com",
                           "label": "tea",
                           "uri": 2,
                         },
@@ -274,12 +274,12 @@ ShallowWrapper {
         recipeList={
                 Array [
                         Object {
-                          "image": "https://coffee/com/",
+                          "image": "https://coffee.com",
                           "label": "coffee",
                           "uri": 1,
                         },
                         Object {
-                          "image": "https://tea/com/",
+                          "image": "https://tea.com",
                           "label": "tea",
                           "uri": 2,
                         },
@@ -307,12 +307,12 @@ ShallowWrapper {
         "props": Object {
           "recipeList": Array [
             Object {
-              "image": "https://coffee/com/",
+              "image": "https://coffee.com",
               "label": "coffee",
               "uri": 1,
             },
             Object {
-              "image": "https://tea/com/",
+              "image": "https://tea.com",
               "label": "tea",
               "uri": 2,
             },
@@ -362,12 +362,12 @@ ShallowWrapper {
                     recipeList={
                               Array [
                                         Object {
-                                          "image": "https://coffee/com/",
+                                          "image": "https://coffee.com",
                                           "label": "coffee",
                                           "uri": 1,
                                         },
                                         Object {
-                                          "image": "https://tea/com/",
+                                          "image": "https://tea.com",
                                           "label": "tea",
                                           "uri": 2,
                                         },
@@ -393,12 +393,12 @@ ShallowWrapper {
                               recipeList={
                                         Array [
                                                   Object {
-                                                    "image": "https://coffee/com/",
+                                                    "image": "https://coffee.com",
                                                     "label": "coffee",
                                                     "uri": 1,
                                                   },
                                                   Object {
-                                                    "image": "https://tea/com/",
+                                                    "image": "https://tea.com",
                                                     "label": "tea",
                                                     "uri": 2,
                                                   },
@@ -421,12 +421,12 @@ ShallowWrapper {
                               recipeList={
                                         Array [
                                                   Object {
-                                                    "image": "https://coffee/com/",
+                                                    "image": "https://coffee.com",
                                                     "label": "coffee",
                                                     "uri": 1,
                                                   },
                                                   Object {
-                                                    "image": "https://tea/com/",
+                                                    "image": "https://tea.com",
                                                     "label": "tea",
                                                     "uri": 2,
                                                   },
@@ -450,12 +450,12 @@ ShallowWrapper {
                     recipeList={
                               Array [
                                         Object {
-                                          "image": "https://coffee/com/",
+                                          "image": "https://coffee.com",
                                           "label": "coffee",
                                           "uri": 1,
                                         },
                                         Object {
-                                          "image": "https://tea/com/",
+                                          "image": "https://tea.com",
                                           "label": "tea",
                                           "uri": 2,
                                         },
@@ -490,12 +490,12 @@ ShallowWrapper {
                     recipeList={
                               Array [
                                         Object {
-                                          "image": "https://coffee/com/",
+                                          "image": "https://coffee.com",
                                           "label": "coffee",
                                           "uri": 1,
                                         },
                                         Object {
-                                          "image": "https://tea/com/",
+                                          "image": "https://tea.com",
                                           "label": "tea",
                                           "uri": 2,
                                         },
@@ -521,12 +521,12 @@ ShallowWrapper {
                               recipeList={
                                         Array [
                                                   Object {
-                                                    "image": "https://coffee/com/",
+                                                    "image": "https://coffee.com",
                                                     "label": "coffee",
                                                     "uri": 1,
                                                   },
                                                   Object {
-                                                    "image": "https://tea/com/",
+                                                    "image": "https://tea.com",
                                                     "label": "tea",
                                                     "uri": 2,
                                                   },
@@ -549,12 +549,12 @@ ShallowWrapper {
                               recipeList={
                                         Array [
                                                   Object {
-                                                    "image": "https://coffee/com/",
+                                                    "image": "https://coffee.com",
                                                     "label": "coffee",
                                                     "uri": 1,
                                                   },
                                                   Object {
-                                                    "image": "https://tea/com/",
+                                                    "image": "https://tea.com",
                                                     "label": "tea",
                                                     "uri": 2,
                                                   },
@@ -578,12 +578,12 @@ ShallowWrapper {
                     recipeList={
                               Array [
                                         Object {
-                                          "image": "https://coffee/com/",
+                                          "image": "https://coffee.com",
                                           "label": "coffee",
                                           "uri": 1,
                                         },
                                         Object {
-                                          "image": "https://tea/com/",
+                                          "image": "https://tea.com",
                                           "label": "tea",
                                           "uri": 2,
                                         },
@@ -618,12 +618,12 @@ ShallowWrapper {
     recipeList={
         Array [
             Object {
-              "image": "https://coffee/com/",
+              "image": "https://coffee.com",
               "label": "coffee",
               "uri": 1,
             },
             Object {
-              "image": "https://tea/com/",
+              "image": "https://tea.com",
               "label": "tea",
               "uri": 2,
             },
@@ -671,6 +671,34 @@ ShallowWrapper {
     >
         tea
     </button>
+    <FavouritesList
+        recipeList={
+            Array [
+                Object {
+                  "image": "https://coffee.com",
+                  "label": "coffee",
+                  "uri": 1,
+                },
+                Object {
+                  "image": "https://tea.com",
+                  "label": "tea",
+                  "uri": 2,
+                },
+              ]
+        }
+        selectedRecipe={
+            Object {
+                "calories": 3,
+                "image": "https://coffee/com/",
+                "ingredients": Array [
+                  "coffee",
+                  "water",
+                ],
+                "label": "coffee",
+                "uri": 1,
+              }
+        }
+    />
 </div>,
   "nodes": Array [
     <div
@@ -691,6 +719,34 @@ ShallowWrapper {
       >
             tea
       </button>
+      <FavouritesList
+            recipeList={
+                  Array [
+                        Object {
+                          "image": "https://coffee.com",
+                          "label": "coffee",
+                          "uri": 1,
+                        },
+                        Object {
+                          "image": "https://tea.com",
+                          "label": "tea",
+                          "uri": 2,
+                        },
+                      ]
+            }
+            selectedRecipe={
+                  Object {
+                        "calories": 3,
+                        "image": "https://coffee/com/",
+                        "ingredients": Array [
+                          "coffee",
+                          "water",
+                        ],
+                        "label": "coffee",
+                        "uri": 1,
+                      }
+            }
+      />
 </div>,
   ],
   "options": Object {},
@@ -703,12 +759,12 @@ ShallowWrapper {
         recipeList={
                 Array [
                         Object {
-                          "image": "https://coffee/com/",
+                          "image": "https://coffee.com",
                           "label": "coffee",
                           "uri": 1,
                         },
                         Object {
-                          "image": "https://tea/com/",
+                          "image": "https://tea.com",
                           "label": "tea",
                           "uri": 2,
                         },
@@ -736,12 +792,12 @@ ShallowWrapper {
         "props": Object {
           "recipeList": Array [
             Object {
-              "image": "https://coffee/com/",
+              "image": "https://coffee.com",
               "label": "coffee",
               "uri": 1,
             },
             Object {
-              "image": "https://tea/com/",
+              "image": "https://tea.com",
               "label": "tea",
               "uri": 2,
             },
@@ -795,6 +851,34 @@ ShallowWrapper {
           >
                     tea
           </button>
+          <FavouritesList
+                    recipeList={
+                              Array [
+                                        Object {
+                                          "image": "https://coffee.com",
+                                          "label": "coffee",
+                                          "uri": 1,
+                                        },
+                                        Object {
+                                          "image": "https://tea.com",
+                                          "label": "tea",
+                                          "uri": 2,
+                                        },
+                                      ]
+                    }
+                    selectedRecipe={
+                              Object {
+                                        "calories": 3,
+                                        "image": "https://coffee/com/",
+                                        "ingredients": Array [
+                                          "coffee",
+                                          "water",
+                                        ],
+                                        "label": "coffee",
+                                        "uri": 1,
+                                      }
+                    }
+          />
 </div>,
         "_debugID": 4,
         "_renderedOutput": <div
@@ -815,6 +899,34 @@ ShallowWrapper {
           >
                     tea
           </button>
+          <FavouritesList
+                    recipeList={
+                              Array [
+                                        Object {
+                                          "image": "https://coffee.com",
+                                          "label": "coffee",
+                                          "uri": 1,
+                                        },
+                                        Object {
+                                          "image": "https://tea.com",
+                                          "label": "tea",
+                                          "uri": 2,
+                                        },
+                                      ]
+                    }
+                    selectedRecipe={
+                              Object {
+                                        "calories": 3,
+                                        "image": "https://coffee/com/",
+                                        "ingredients": Array [
+                                          "coffee",
+                                          "water",
+                                        ],
+                                        "label": "coffee",
+                                        "uri": 1,
+                                      }
+                    }
+          />
 </div>,
       },
       "_renderedNodeType": 0,
@@ -831,12 +943,12 @@ ShallowWrapper {
     recipeList={
         Array [
             Object {
-              "image": "https://coffee/com/",
+              "image": "https://coffee.com",
               "label": "coffee",
               "uri": 1,
             },
             Object {
-              "image": "https://tea/com/",
+              "image": "https://tea.com",
               "label": "tea",
               "uri": 2,
             },
@@ -981,6 +1093,34 @@ ShallowWrapper {
   "node": <div
     className="details-component"
 >
+    <LikeButton
+        recipeList={
+            Array [
+                Object {
+                  "image": "https://coffee.com",
+                  "label": "coffee",
+                  "uri": 1,
+                },
+                Object {
+                  "image": "https://tea.com",
+                  "label": "tea",
+                  "uri": 2,
+                },
+              ]
+        }
+        selectedRecipe={
+            Object {
+                "calories": 3,
+                "image": "https://coffee/com/",
+                "ingredients": Array [
+                  "coffee",
+                  "water",
+                ],
+                "label": "coffee",
+                "uri": 1,
+              }
+        }
+    />
     <h2>
         coffee
     </h2>
@@ -1004,17 +1144,46 @@ ShallowWrapper {
         Source
     </h3>
     <span />
-    <button
+    <a
         className="btn"
         href={undefined}
+        target="_blank"
     >
-        Go to Recipe
-    </button>
+        Go to Instructions
+    </a>
 </div>,
   "nodes": Array [
     <div
       className="details-component"
 >
+      <LikeButton
+            recipeList={
+                  Array [
+                        Object {
+                          "image": "https://coffee.com",
+                          "label": "coffee",
+                          "uri": 1,
+                        },
+                        Object {
+                          "image": "https://tea.com",
+                          "label": "tea",
+                          "uri": 2,
+                        },
+                      ]
+            }
+            selectedRecipe={
+                  Object {
+                        "calories": 3,
+                        "image": "https://coffee/com/",
+                        "ingredients": Array [
+                          "coffee",
+                          "water",
+                        ],
+                        "label": "coffee",
+                        "uri": 1,
+                      }
+            }
+      />
       <h2>
             coffee
       </h2>
@@ -1038,12 +1207,13 @@ ShallowWrapper {
             Source
       </h3>
       <span />
-      <button
+      <a
             className="btn"
             href={undefined}
+            target="_blank"
       >
-            Go to Recipe
-      </button>
+            Go to Instructions
+      </a>
 </div>,
   ],
   "options": Object {},
@@ -1056,12 +1226,12 @@ ShallowWrapper {
         recipeList={
                 Array [
                         Object {
-                          "image": "https://coffee/com/",
+                          "image": "https://coffee.com",
                           "label": "coffee",
                           "uri": 1,
                         },
                         Object {
-                          "image": "https://tea/com/",
+                          "image": "https://tea.com",
                           "label": "tea",
                           "uri": 2,
                         },
@@ -1089,12 +1259,12 @@ ShallowWrapper {
         "props": Object {
           "recipeList": Array [
             Object {
-              "image": "https://coffee/com/",
+              "image": "https://coffee.com",
               "label": "coffee",
               "uri": 1,
             },
             Object {
-              "image": "https://tea/com/",
+              "image": "https://tea.com",
               "label": "tea",
               "uri": 2,
             },
@@ -1133,6 +1303,34 @@ ShallowWrapper {
         "_currentElement": <div
           className="details-component"
 >
+          <LikeButton
+                    recipeList={
+                              Array [
+                                        Object {
+                                          "image": "https://coffee.com",
+                                          "label": "coffee",
+                                          "uri": 1,
+                                        },
+                                        Object {
+                                          "image": "https://tea.com",
+                                          "label": "tea",
+                                          "uri": 2,
+                                        },
+                                      ]
+                    }
+                    selectedRecipe={
+                              Object {
+                                        "calories": 3,
+                                        "image": "https://coffee/com/",
+                                        "ingredients": Array [
+                                          "coffee",
+                                          "water",
+                                        ],
+                                        "label": "coffee",
+                                        "uri": 1,
+                                      }
+                    }
+          />
           <h2>
                     coffee
           </h2>
@@ -1156,17 +1354,46 @@ ShallowWrapper {
                     Source
           </h3>
           <span />
-          <button
+          <a
                     className="btn"
                     href={undefined}
+                    target="_blank"
           >
-                    Go to Recipe
-          </button>
+                    Go to Instructions
+          </a>
 </div>,
         "_debugID": 2,
         "_renderedOutput": <div
           className="details-component"
 >
+          <LikeButton
+                    recipeList={
+                              Array [
+                                        Object {
+                                          "image": "https://coffee.com",
+                                          "label": "coffee",
+                                          "uri": 1,
+                                        },
+                                        Object {
+                                          "image": "https://tea.com",
+                                          "label": "tea",
+                                          "uri": 2,
+                                        },
+                                      ]
+                    }
+                    selectedRecipe={
+                              Object {
+                                        "calories": 3,
+                                        "image": "https://coffee/com/",
+                                        "ingredients": Array [
+                                          "coffee",
+                                          "water",
+                                        ],
+                                        "label": "coffee",
+                                        "uri": 1,
+                                      }
+                    }
+          />
           <h2>
                     coffee
           </h2>
@@ -1190,12 +1417,13 @@ ShallowWrapper {
                     Source
           </h3>
           <span />
-          <button
+          <a
                     className="btn"
                     href={undefined}
+                    target="_blank"
           >
-                    Go to Recipe
-          </button>
+                    Go to Instructions
+          </a>
 </div>,
       },
       "_renderedNodeType": 0,
@@ -1212,12 +1440,12 @@ ShallowWrapper {
     recipeList={
         Array [
             Object {
-              "image": "https://coffee/com/",
+              "image": "https://coffee.com",
               "label": "coffee",
               "uri": 1,
             },
             Object {
-              "image": "https://tea/com/",
+              "image": "https://tea.com",
               "label": "tea",
               "uri": 2,
             },

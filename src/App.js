@@ -5,7 +5,7 @@ import Details from './components/Details';
 import Warning from './components/Warning';
 import ResultsList from './components/ResultsList';
 import { connect } from 'react-redux';
-import { getRecipeByName, onTextInputChange, showRecipeDetails } from './redux/actions/recipe.actions'
+import { getRecipeByName, onTextInputChange, showRecipeDetails, addFavouriteRecipe, removeFavouriteRecipe } from './redux/actions/recipe.actions'
 
 export const App = props => (
   <div className="App">
@@ -22,12 +22,13 @@ export const App = props => (
 );
 
 const mapStateToProps = (state) => {
-  console.log('state', state)
   return {
     textInput: state.inputChange.textInput,
     recipeList: state.recipe.list,
     selectedRecipe: state.recipe.selectedRecipe,
     isError: state.recipe.isError,
+    favourites: state.recipe.favourites,
+    isFavourite: state.recipe.isFavourite
   }
 }
 
@@ -35,6 +36,8 @@ const actions = {
   onTextInputChange,
   getRecipeByName,
   showRecipeDetails,
+  addFavouriteRecipe,
+  removeFavouriteRecipe,
 }
 
 export default connect(
