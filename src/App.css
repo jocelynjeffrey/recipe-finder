@@ -14,6 +14,7 @@ button {
   border: none;
   font-size: 18px;
   padding: 10px 5px;
+  cursor: pointer;
 }
 
 .App-header {
@@ -90,9 +91,11 @@ button {
 }
 
 .details-component {
+  display: flex;
+  flex-direction: column;
+  padding: 0 25px 25px;
   width: 60%;
   box-sizing: border-box;
-  padding-bottom: 25px;
 }
 
 .details-component h3 {
@@ -102,13 +105,27 @@ button {
 
 .details-component img {
   border: 1px solid #C2C2C4;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
 }
 
 .details-component .btn {
+  cursor: pointer;
   color: #fff;
+  text-decoration: none;
   width: 60%;
   display: block;
   margin: 30px auto;
+  background-color: #EF4581;
+  font-weight: 700;
+  border: none;
+  font-size: 18px;
+  padding: 10px 5px;
+}
+
+.details-component .btn:hover {
+  background-color: #EF4581;
 }
 
 .details-component ul {
@@ -119,6 +136,21 @@ button {
 
 .details-component li {
   padding: 5px 0;
+}
+
+.heart {
+  width: 50px;
+  cursor: pointer;
+  padding-top: 20px;
+  align-self: flex-end;
+}
+
+.heart.inactive {
+  fill: #C2C2C4;
+}
+
+.heart.active {
+  fill: #EF4581;
 }
 
 .warning {

@@ -1,9 +1,11 @@
 import React from 'react';
 import '../../App.css';
+import LikeButton from '../LikeButton';
 
 const Details = props => {
   if (props.selectedRecipe) {
     return <div className="details-component">
+    <LikeButton {...props} />
       <h2>{props.selectedRecipe.label}</h2>
       <img src={props.selectedRecipe.image} />
       <h3>Ingredients</h3>
@@ -16,7 +18,7 @@ const Details = props => {
       <span>{Math.round(props.selectedRecipe.calories)}</span>
       <h3>Source</h3>
       <span>{props.selectedRecipe.source}</span>
-      <button className="btn" href={props.selectedRecipe.url}>Go to Recipe</button>
+      <a className="btn" target="_blank" href={props.selectedRecipe.url}>Go to Instructions</a>
     </div>
   }
   return null

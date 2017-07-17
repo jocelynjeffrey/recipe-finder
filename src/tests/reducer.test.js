@@ -6,6 +6,8 @@ const mockInitialState = {
     errorMessage: null,
     list: [],
     selectedRecipe: null,
+    isFavourite: false,
+    favourites: [],
 }
 
 describe('inputReducer', () => {
