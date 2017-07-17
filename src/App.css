@@ -17,6 +17,16 @@ button {
   cursor: pointer;
 }
 
+.toggle-tabs {
+  display: block;
+  width: 100%;
+}
+
+.toggle-tabs a {
+  font-weight: 700;
+  width: 100%;
+}
+
 .App-header {
   background-color: #01848F;
   height: 70px;
@@ -42,7 +52,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80px;
+  padding: 20px;
   width: 100%;
   font-size: large;
 }

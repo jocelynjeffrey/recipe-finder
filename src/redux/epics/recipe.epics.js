@@ -21,3 +21,19 @@ export const getRecipeByNameEpic = actions$ =>
         error: true
       }))
     );
+
+export const getRecipeByCaloriesEpic = actions$ =>
+// const CALORIE_RANGE = `gte${CAL_LOWER},lte${CAL_UPPER}`
+  actions$.ofType(RECIPE_ACTIONS.GET_RECIPES_BY_CALORIES)
+    .mergeMap(action =>
+      Observable.ajax(`${ENDPOINT}&q=${action.payload.nameInput}&calories=gte${action.payload.calLower},lte${action.payload.calUpper}`)
+      .map(({ response }) => ({
+        type: RECIPE_ACTIONS.RECIPES_RECEIVED_SUCCESS,
+        payload: response.hits.map(hit => hit.recipe),
+      }))
+      .catch(error => Observable.of({
+        type: RECIPE_ACTIONS.RECIPES_RECEIVED_ERROR,
+        payload: error.xhr.response,
+        error: true
+      }))
+    );

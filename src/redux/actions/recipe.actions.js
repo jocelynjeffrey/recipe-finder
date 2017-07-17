@@ -5,6 +5,10 @@ export const RECIPE_ACTIONS = {
   TEXT_INPUT_CHANGE: 'TEXT_INPUT_CHANGE',
   ADD_FAVOURITE_RECIPE: 'ADD_FAVOURITE_RECIPE',
   REMOVE_FAVOURITE_RECIPE: 'REMOVE_FAVOURITE_RECIPE',
+  GET_RECIPES_BY_CALORIES: 'GET_RECIPES_BY_CALORIES',
+  CALORIES_UPPER_INPUT_CHANGE: 'CALORIES_UPPER_INPUT_CHANGE',
+  CALORIES_LOWER_INPUT_CHANGE: 'CALORIES_LOWER_INPUT_CHANGE',
+  NAME_INPUT_CHANGE: 'NAME_INPUT_CHANGE',
 
   // epic actions
   RECIPES_RECEIVED_SUCCESS: 'RECIPES_RECEIVED_SUCCESS',
@@ -14,6 +18,11 @@ export const RECIPE_ACTIONS = {
 export const getRecipeByName = ingredient => ({
   type: RECIPE_ACTIONS.GET_RECIPES_BY_NAME,
   payload: ingredient,
+});
+
+export const getRecipeByCalories = recipeParams => ({
+  type: RECIPE_ACTIONS.GET_RECIPES_BY_CALORIES,
+  payload: {nameInput: recipeParams.nameInput, calLower: recipeParams.calorieLowerInput, calUpper: recipeParams.calorieUpperInput},
 });
 
 export const addFavouriteRecipe = recipe => ({
@@ -28,6 +37,21 @@ export const removeFavouriteRecipe = recipe => ({
 
 export const onTextInputChange = value => ({
   type: RECIPE_ACTIONS.TEXT_INPUT_CHANGE,
+  payload: value,
+});
+
+export const onNameInputChange = value => ({
+  type: RECIPE_ACTIONS.NAME_INPUT_CHANGE,
+  payload: value,
+});
+
+export const onCaloriesLowerInputChange = value => ({
+  type: RECIPE_ACTIONS.CALORIES_LOWER_INPUT_CHANGE,
+  payload: value,
+});
+
+export const onCaloriesUpperInputChange = value => ({
+  type: RECIPE_ACTIONS.CALORIES_UPPER_INPUT_CHANGE,
   payload: value,
 });
 
