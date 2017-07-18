@@ -1017,7 +1017,7 @@ ShallowWrapper {
             className="calorie-tabs "
         >
             <label>
-                Calories
+                Calories per serving
             </label>
             <input
                 className="calorie-input "
@@ -1079,7 +1079,7 @@ ShallowWrapper {
                   className="calorie-tabs "
             >
                   <label>
-                        Calories
+                        Calories per serving
                   </label>
                   <input
                         className="calorie-input "
@@ -1175,7 +1175,7 @@ ShallowWrapper {
                               className="calorie-tabs "
                     >
                               <label>
-                                        Calories
+                                        Calories per serving
                               </label>
                               <input
                                         className="calorie-input "
@@ -1237,7 +1237,7 @@ ShallowWrapper {
                               className="calorie-tabs "
                     >
                               <label>
-                                        Calories
+                                        Calories per serving
                               </label>
                               <input
                                         className="calorie-input "
@@ -1327,11 +1327,9 @@ ShallowWrapper {
         <li />
     </ul>
     <h3>
-        Calories
+        Calories per serving
     </h3>
-    <span>
-        3
-    </span>
+    <span />
     <h3>
         Source
     </h3>
@@ -1390,11 +1388,9 @@ ShallowWrapper {
             <li />
       </ul>
       <h3>
-            Calories
+            Calories per serving
       </h3>
-      <span>
-            3
-      </span>
+      <span />
       <h3>
             Source
       </h3>
@@ -1537,11 +1533,9 @@ ShallowWrapper {
                     <li />
           </ul>
           <h3>
-                    Calories
+                    Calories per serving
           </h3>
-          <span>
-                    3
-          </span>
+          <span />
           <h3>
                     Source
           </h3>
@@ -1600,11 +1594,9 @@ ShallowWrapper {
                     <li />
           </ul>
           <h3>
-                    Calories
+                    Calories per serving
           </h3>
-          <span>
-                    3
-          </span>
+          <span />
           <h3>
                     Source
           </h3>
