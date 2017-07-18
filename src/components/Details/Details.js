@@ -1,6 +1,8 @@
 import React from 'react';
-import '../../App.css';
 import LikeButton from '../LikeButton';
+
+import '../../App.css';
+import './Details.css';
 
 const Details = props => {
   if (props.selectedRecipe) {

@@ -1,0 +1,111 @@
+.search-component {
+  background-color: #E6E7E8;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+  font-size: large;
+}
+
+.search-component input {
+  width: 100%;
+  padding: 0 10px;
+  border: none;
+  height: 40px;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.search-component label {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-right: 10px;
+}
+
+.search-component button {
+  width: 70%;
+  color: #fff;
+  margin-top: 15px;
+}
+
+.toggle-tabs {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.toggle-tabs a {
+  cursor: pointer;
+  font-weight: 700;
+  width: 30%;
+  max-width: 300px;
+  padding: 15px 10px;
+  color: #E6E7E8;
+  background-color: #C2C2C4;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.toggle-tabs a:first-of-type {
+  margin-right: -15px;
+}
+
+.toggle-tabs a:hover {
+  background-color: #80cbc4;
+  color: #fff;
+}
+
+.toggle-tabs a.active {
+  color: #fff;
+  font-weight: 700;
+  background-color:#01848F;
+  cursor: auto;
+  z-index: 1;
+}
+
+.search-component .form {
+  width: 80%;
+  padding: 20px 25px;
+  max-width: 615px;
+  border: 1px solid #C2C2C4;
+  border-radius: 5px;
+}
+
+.search-component .form div {
+  justify-content: flex-start;
+}
+
+.search-tab {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calorie-tabs {
+  display: none;
+}
+
+.calorie-tabs label {
+  width: 100%;
+  text-align: left;
+}
+
+.calorie-tabs.active {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calorie-input {
+  display: none;
+}
+
+.calorie-input.active:first-of-type {
+  margin-right: 10px;
+}
+
+.calorie-input.active {
+  display: inline-block;
+  width: 60px;
+}

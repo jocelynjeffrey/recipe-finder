@@ -1,5 +1,8 @@
 import React from 'react';
+
 import '../../App.css';
+import './FavouritesList.css';
+
 
 const FavouritesList = props => {
   { if (props.favourites.length === 0) return null; }
