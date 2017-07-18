@@ -8,6 +8,8 @@ const mockRecipeState = {
   errorMessage: null,
   selectedRecipe: null,
   isFavourite: false,
+  apiRequestMade: false,
+  clientErrorMessage: '',
 }
 
 const mockInputState = {
@@ -49,6 +51,7 @@ describe('recipeReducer', () => {
       payload: recipes,
     })).toEqual({
       ...mockRecipeState,
+      apiRequestMade: true,
       list: recipes,
     });
   });

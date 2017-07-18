@@ -107,6 +107,7 @@ ShallowWrapper {
         />
     </div>
     <Warning
+        clientErrorMessage="There has been an error. Please try again later."
         recipeList={
             Array [
                 Object {
@@ -235,6 +236,7 @@ ShallowWrapper {
             />
       </div>
       <Warning
+            clientErrorMessage="There has been an error. Please try again later."
             recipeList={
                   Array [
                         Object {
@@ -447,6 +449,7 @@ ShallowWrapper {
                     />
           </div>
           <Warning
+                    clientErrorMessage="There has been an error. Please try again later."
                     recipeList={
                               Array [
                                         Object {
@@ -575,6 +578,7 @@ ShallowWrapper {
                     />
           </div>
           <Warning
+                    clientErrorMessage="There has been an error. Please try again later."
                     recipeList={
                               Array [
                                         Object {
