@@ -16,8 +16,8 @@ const Details = props => {
             <li key={i}>{ingredient.text}</li>
           )}
       </ul>
-      <h3>Calories</h3>
-      <span>{Math.round(props.selectedRecipe.calories)}</span>
+      <h3>Calories per serving</h3>
+      <span>{Math.round(props.selectedRecipe.calories / props.selectedRecipe.yield) }</span>
       <h3>Source</h3>
       <span>{props.selectedRecipe.source}</span>
       <a className="btn" target="_blank" href={props.selectedRecipe.url}>Go to Instructions</a>

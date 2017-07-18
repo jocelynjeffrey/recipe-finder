@@ -1,36 +1,45 @@
 import inputReducer from '../redux/reducers/input.reducer.js';
 import recipeReducer from '../redux/reducers/recipe.reducer.js';
 
-const mockInitialState = {
-    isError: false,
-    errorMessage: null,
-    list: [],
-    selectedRecipe: null,
-    isFavourite: false,
-    favourites: [],
+const mockRecipeState = {
+  list: [],
+  favourites: [],
+  isError: false,
+  errorMessage: null,
+  selectedRecipe: null,
+  isFavourite: false,
+}
+
+const mockInputState = {
+  nameInput: '',
+  calorieLowerInput: '',
+  calorieUpperInput: '',
+  calorieTabActive: false,
 }
 
 describe('inputReducer', () => {
   it('should return the initial state', () => {
     expect(inputReducer(undefined, {})).toEqual({
-      textInput: '',
+      ...mockInputState,
+      nameInput: '',
     });
   });
 
-  it('should react to action TEXT_INPUT_CHANGE', () => {
+  it('should react to action NAME_INPUT_CHANGE', () => {
     const string = 'pumpkin pie';
     expect(inputReducer(undefined, {
-      type: 'TEXT_INPUT_CHANGE',
+      type: 'NAME_INPUT_CHANGE',
       payload: string,
     })).toEqual({
-      textInput: string,
+      ...mockInputState,
+      nameInput: string,
     });
   });
 });
 
 describe('recipeReducer', () => {
   it('should return the initial state', () => {
-    expect(recipeReducer(undefined, {})).toEqual(mockInitialState);
+    expect(recipeReducer(undefined, {})).toEqual(mockRecipeState);
   });
 
   it('should react to action RECIPES_RECEIVED_SUCCESS', () => {
@@ -39,7 +48,7 @@ describe('recipeReducer', () => {
       type: 'RECIPES_RECEIVED_SUCCESS',
       payload: recipes,
     })).toEqual({
-      ...mockInitialState,
+      ...mockRecipeState,
       list: recipes,
     });
   });
@@ -48,7 +57,7 @@ describe('recipeReducer', () => {
     expect(recipeReducer(undefined, {
       type: 'RECIPES_RECEIVED_ERROR',
     })).toEqual({
-      ...mockInitialState,
+      ...mockRecipeState,
       isError: true,
       errorMessage: {'type': 'RECIPES_RECEIVED_ERROR' }
     });
@@ -60,7 +69,7 @@ describe('recipeReducer', () => {
       type: 'SHOW_RECIPE_DETAILS',
       payload: recipe,
     })).toEqual({
-      ...mockInitialState,
+      ...mockRecipeState,
       selectedRecipe: recipe,
     });
   });

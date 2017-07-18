@@ -1,7 +1,6 @@
 import { RECIPE_ACTIONS } from '../actions/recipe.actions';
 
 const DEFAULT_STATE = {
-  textInput: '',
   nameInput: '',
   calorieLowerInput: '',
   calorieUpperInput: '',
