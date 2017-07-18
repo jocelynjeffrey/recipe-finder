@@ -7,13 +7,15 @@ const DEFAULT_STATE = {
   errorMessage: null,
   selectedRecipe: null,
   isFavourite: false,
+  apiRequestMade: false,
+  clientErrorMessage: '',
 };
 
 export default (state = DEFAULT_STATE, action) => {
   switch(action.type) {
 
     case RECIPE_ACTIONS.RECIPES_RECEIVED_SUCCESS:
-      return {...state, list: action.payload, isError: false };
+      return {...state, list: action.payload, isError: false, apiRequestMade: true };
 
     case RECIPE_ACTIONS.RECIPES_RECEIVED_ERROR:
       return {...state, list: [], isError: true, errorMessage: action };
