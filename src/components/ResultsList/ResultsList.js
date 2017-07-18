@@ -1,6 +1,9 @@
 import React from 'react';
-import '../../App.css';
 import FavouritesList from '../FavouritesList';
+
+import '../../App.css';
+import './ResultsList.css';
+
 
 const ResultsList = props => {
   { if (props.recipeList.length === 0) return null; }
