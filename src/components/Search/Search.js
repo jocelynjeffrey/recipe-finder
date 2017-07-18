@@ -26,7 +26,7 @@ const Search = props => {
       </div>
       <div className={`calorie-tabs ${props.calorieTabActive ? 'active' : ''}`}>
         <label>
-          Calories
+          Calories per serving
         </label>
         <input
           placeholder="from"
