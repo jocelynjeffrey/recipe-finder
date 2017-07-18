@@ -1,19 +1,19 @@
 import {
-  onTextInputChange,
+  onNameInputChange,
   getRecipeByName,
   showRecipeDetails,
 } from '../redux/actions/recipe.actions';
 
 describe('actions', () => {
 
-  describe('onTextInputChange', () => {
+  describe('onNameInputChange', () => {
     it('should have a payload of value', () => {
       const value = "pear"
-      expect(onTextInputChange(value).payload).toEqual(value);
+      expect(onNameInputChange(value).payload).toEqual(value);
     });
 
-    it('should have a type of TEXT_INPUT_CHANGE', () => {
-      expect(onTextInputChange().type).toEqual('TEXT_INPUT_CHANGE');
+    it('should have a type of NAME_INPUT_CHANGE', () => {
+      expect(onNameInputChange().type).toEqual('NAME_INPUT_CHANGE');
     });
   })
 

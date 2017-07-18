@@ -981,29 +981,125 @@ ShallowWrapper {
   "node": <div
     className="search-component"
 >
-    <input
-        onChange={[Function]}
-        value={undefined}
-    />
-    <button
-        onClick={[Function]}
+    <div
+        className="toggle-tabs"
     >
-        Search
-    </button>
+        <a
+            className=" active"
+            onClick={[Function]}
+        >
+            Search by Recipe Name
+        </a>
+        <a
+            className=" "
+            onClick={[Function]}
+        >
+            Search by Calorie Count
+        </a>
+    </div>
+    <div
+        className="form"
+    >
+        <div
+            className="search-tab"
+        >
+            <label
+                htmlFor="recipe-name"
+            >
+                Recipe Name
+            </label>
+            <input
+                onChange={[Function]}
+                value={undefined}
+            />
+        </div>
+        <div
+            className="calorie-tabs "
+        >
+            <label>
+                Calories
+            </label>
+            <input
+                className="calorie-input "
+                onChange={[Function]}
+                placeholder="from"
+                value={undefined}
+            />
+            <input
+                className="calorie-input "
+                onChange={[Function]}
+                placeholder="to"
+                value={undefined}
+            />
+        </div>
+        <button
+            onClick={[Function]}
+        >
+            Search
+        </button>
+    </div>
 </div>,
   "nodes": Array [
     <div
       className="search-component"
 >
-      <input
-            onChange={[Function]}
-            value={undefined}
-      />
-      <button
-            onClick={[Function]}
+      <div
+            className="toggle-tabs"
       >
-            Search
-      </button>
+            <a
+                  className=" active"
+                  onClick={[Function]}
+            >
+                  Search by Recipe Name
+            </a>
+            <a
+                  className=" "
+                  onClick={[Function]}
+            >
+                  Search by Calorie Count
+            </a>
+      </div>
+      <div
+            className="form"
+      >
+            <div
+                  className="search-tab"
+            >
+                  <label
+                        htmlFor="recipe-name"
+                  >
+                        Recipe Name
+                  </label>
+                  <input
+                        onChange={[Function]}
+                        value={undefined}
+                  />
+            </div>
+            <div
+                  className="calorie-tabs "
+            >
+                  <label>
+                        Calories
+                  </label>
+                  <input
+                        className="calorie-input "
+                        onChange={[Function]}
+                        placeholder="from"
+                        value={undefined}
+                  />
+                  <input
+                        className="calorie-input "
+                        onChange={[Function]}
+                        placeholder="to"
+                        value={undefined}
+                  />
+            </div>
+            <button
+                  onClick={[Function]}
+            >
+                  Search
+            </button>
+      </div>
 </div>,
   ],
   "options": Object {},
@@ -1043,29 +1139,125 @@ ShallowWrapper {
         "_currentElement": <div
           className="search-component"
 >
-          <input
-                    onChange={[Function]}
-                    value={undefined}
-          />
-          <button
-                    onClick={[Function]}
+          <div
+                    className="toggle-tabs"
           >
-                    Search
-          </button>
+                    <a
+                              className=" active"
+                              onClick={[Function]}
+                    >
+                              Search by Recipe Name
+                    </a>
+                    <a
+                              className=" "
+                              onClick={[Function]}
+                    >
+                              Search by Calorie Count
+                    </a>
+          </div>
+          <div
+                    className="form"
+          >
+                    <div
+                              className="search-tab"
+                    >
+                              <label
+                                        htmlFor="recipe-name"
+                              >
+                                        Recipe Name
+                              </label>
+                              <input
+                                        onChange={[Function]}
+                                        value={undefined}
+                              />
+                    </div>
+                    <div
+                              className="calorie-tabs "
+                    >
+                              <label>
+                                        Calories
+                              </label>
+                              <input
+                                        className="calorie-input "
+                                        onChange={[Function]}
+                                        placeholder="from"
+                                        value={undefined}
+                              />
+                              <input
+                                        className="calorie-input "
+                                        onChange={[Function]}
+                                        placeholder="to"
+                                        value={undefined}
+                              />
+                    </div>
+                    <button
+                              onClick={[Function]}
+                    >
+                              Search
+                    </button>
+          </div>
 </div>,
         "_debugID": 8,
         "_renderedOutput": <div
           className="search-component"
 >
-          <input
-                    onChange={[Function]}
-                    value={undefined}
-          />
-          <button
-                    onClick={[Function]}
+          <div
+                    className="toggle-tabs"
           >
-                    Search
-          </button>
+                    <a
+                              className=" active"
+                              onClick={[Function]}
+                    >
+                              Search by Recipe Name
+                    </a>
+                    <a
+                              className=" "
+                              onClick={[Function]}
+                    >
+                              Search by Calorie Count
+                    </a>
+          </div>
+          <div
+                    className="form"
+          >
+                    <div
+                              className="search-tab"
+                    >
+                              <label
+                                        htmlFor="recipe-name"
+                              >
+                                        Recipe Name
+                              </label>
+                              <input
+                                        onChange={[Function]}
+                                        value={undefined}
+                              />
+                    </div>
+                    <div
+                              className="calorie-tabs "
+                    >
+                              <label>
+                                        Calories
+                              </label>
+                              <input
+                                        className="calorie-input "
+                                        onChange={[Function]}
+                                        placeholder="from"
+                                        value={undefined}
+                              />
+                              <input
+                                        className="calorie-input "
+                                        onChange={[Function]}
+                                        placeholder="to"
+                                        value={undefined}
+                              />
+                    </div>
+                    <button
+                              onClick={[Function]}
+                    >
+                              Search
+                    </button>
+          </div>
 </div>,
       },
       "_renderedNodeType": 0,
