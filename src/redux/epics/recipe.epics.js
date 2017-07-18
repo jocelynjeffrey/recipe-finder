@@ -18,7 +18,6 @@ export const getRecipeByNameEpic = actions$ =>
       .catch(error => Observable.of({
         type: RECIPE_ACTIONS.RECIPES_RECEIVED_ERROR,
         payload: error.xhr.response,
-        error: true
       }))
     );
 

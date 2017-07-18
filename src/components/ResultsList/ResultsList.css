@@ -1,0 +1,26 @@
+.results-component {
+  width: 40%;
+  display: block;
+  box-sizing: border-box;
+  background-color: #E6E7E8;
+}
+
+.results-component .btn {
+  width: 100%;
+  border: none;
+  background-color: #E6E7E8;
+  box-sizing: border-box;
+  font-weight: 700;
+  font-size: 14px;
+  min-height: 50px;
+  height: inherit;
+}
+
+.results-component .btn:hover {
+  background-color: #F9A11F;
+}
+
+.results-component .btn:focus {
+  background-color: #80cbc4;
+  outline: 0;
+}

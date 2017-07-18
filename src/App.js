@@ -6,14 +6,14 @@ import Warning from './components/Warning';
 import ResultsList from './components/ResultsList';
 import { connect } from 'react-redux';
 import { getRecipeByName,
-  onTextInputChange,
   onNameInputChange,
   showRecipeDetails,
   addFavouriteRecipe,
   removeFavouriteRecipe,
   getRecipeByCalories,
   onCaloriesLowerInputChange,
-  onCaloriesUpperInputChange } from './redux/actions/recipe.actions'
+  onCaloriesUpperInputChange,
+  showCalorieInput } from './redux/actions/recipe.actions'
 
 export const App = props => (
   <div className="App">
@@ -40,12 +40,12 @@ const mapStateToProps = (state) => {
     selectedRecipe: state.recipe.selectedRecipe,
     isError: state.recipe.isError,
     favourites: state.recipe.favourites,
-    isFavourite: state.recipe.isFavourite
+    isFavourite: state.recipe.isFavourite,
+    calorieTabActive: state.inputValues.calorieTabActive,
   }
 }
 
 const actions = {
-  onTextInputChange,
   onNameInputChange,
   onCaloriesUpperInputChange,
   onCaloriesLowerInputChange,
@@ -54,6 +54,7 @@ const actions = {
   showRecipeDetails,
   addFavouriteRecipe,
   removeFavouriteRecipe,
+  showCalorieInput,
 }
 
 export default connect(

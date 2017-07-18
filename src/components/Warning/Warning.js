@@ -1,5 +1,7 @@
 import React from 'react';
+
 import '../../App.css';
+import './Warning.css';
 
 const Warning = props => {
   if (props.isError) {

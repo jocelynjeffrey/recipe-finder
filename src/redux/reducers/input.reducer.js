@@ -5,12 +5,14 @@ const DEFAULT_STATE = {
   nameInput: '',
   calorieLowerInput: '',
   calorieUpperInput: '',
+  calorieTabActive: false,
 };
 
 export default (state = DEFAULT_STATE, action) => {
   switch(action.type) {
-    case RECIPE_ACTIONS.TEXT_INPUT_CHANGE:
-      return {...state, textInput: action.payload };
+
+    case RECIPE_ACTIONS.SHOW_CALORIE_INPUT:
+      return {...state, calorieTabActive: action.payload };
 
     case RECIPE_ACTIONS.NAME_INPUT_CHANGE:
       return {...state, nameInput: action.payload };

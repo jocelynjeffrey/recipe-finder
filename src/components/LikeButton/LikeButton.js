@@ -1,9 +1,12 @@
 import React from 'react';
+
 import '../../App.css';
+import './LikeButton.css';
+
 
 const LikeButton = props => (
   <svg
-    className={`heart ${ props.isFavourite ? 'active' : 'inactive'}` }
+    className={`like-button ${ props.isFavourite ? 'active' : 'inactive'}` }
     viewBox="0 0 32 29.6"
     onClick={() => { props.isFavourite
         ? props.removeFavouriteRecipe(props.selectedRecipe)

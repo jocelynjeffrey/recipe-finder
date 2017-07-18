@@ -1,0 +1,14 @@
+.like-button {
+  width: 50px;
+  cursor: pointer;
+  padding-top: 20px;
+  align-self: flex-end;
+}
+
+.like-button.inactive {
+  fill: #C2C2C4;
+}
+
+.like-button.active {
+  fill: #EF4581;
+}
