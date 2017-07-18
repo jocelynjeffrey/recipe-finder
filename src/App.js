@@ -25,7 +25,7 @@ export const App = props => (
       <ResultsList {...props} />
       <Details {...props} />
     </div>
-    <Warning {...props} />
+    <Warning {...props } />
   </div>
 );
 
@@ -42,6 +42,7 @@ const mapStateToProps = (state) => {
     favourites: state.recipe.favourites,
     isFavourite: state.recipe.isFavourite,
     calorieTabActive: state.inputValues.calorieTabActive,
+    apiRequestMade: state.recipe.apiRequestMade,
   }
 }
 

@@ -24,3 +24,8 @@
   background-color: #80cbc4;
   outline: 0;
 }
+
+.no-results {
+  text-align: center;
+  width: 100%;
+}
