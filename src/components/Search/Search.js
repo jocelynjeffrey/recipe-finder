@@ -32,18 +32,26 @@ const Search = props => {
           placeholder="from"
           className={`calorie-input ${props.calorieTabActive ? 'active' : ''}`}
           value={props.calorieLowerInput}
+          type="number"
           onChange={e => props.onCaloriesLowerInputChange(e.target.value)}/>
         <input
           placeholder="to"
           className={`calorie-input ${props.calorieTabActive ? 'active' : ''}`}
           value={props.calorieUpperInput}
+          type="number"
           onChange={e => props.onCaloriesUpperInputChange(e.target.value)}/>
       </div>
-      <button onClick={ () => {
+      <button
+      disabled={ props.calorieTabActive
+        ? props.calorieLowerInput.length === 0 || props.calorieUpperInput.length === 0 || props.nameInput.length < 2
+        : props.nameInput.length < 2
+      }
+      onClick={ () => {
         props.calorieTabActive
         ? props.getRecipeByCalories(props.inputValues)
         : props.getRecipeByName(props.nameInput)
-      }}>Search</button>
+      }
+    }>Search</button>
     </div>
 
   </div>

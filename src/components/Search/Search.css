@@ -31,6 +31,11 @@
   margin-top: 15px;
 }
 
+.search-component button:disabled {
+  color: #E6E7E8;
+  background-color: #C2C2C4;
+}
+
 .toggle-tabs {
   display: flex;
   width: 100%;
