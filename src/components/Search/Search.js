@@ -44,7 +44,7 @@ const Search = props => {
       <button
       disabled={ props.calorieTabActive
         ? props.calorieLowerInput.length === 0 || props.calorieUpperInput.length === 0 || props.nameInput.length < 2
-        : props.nameInput.length < 2
+        : !props.nameInput || props.nameInput.length < 2
       }
       onClick={ () => {
         props.calorieTabActive

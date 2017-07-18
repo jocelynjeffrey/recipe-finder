@@ -1023,16 +1023,19 @@ ShallowWrapper {
                 className="calorie-input "
                 onChange={[Function]}
                 placeholder="from"
+                type="number"
                 value={undefined}
             />
             <input
                 className="calorie-input "
                 onChange={[Function]}
                 placeholder="to"
+                type="number"
                 value={undefined}
             />
         </div>
         <button
+            disabled={true}
             onClick={[Function]}
         >
             Search
@@ -1085,16 +1088,19 @@ ShallowWrapper {
                         className="calorie-input "
                         onChange={[Function]}
                         placeholder="from"
+                        type="number"
                         value={undefined}
                   />
                   <input
                         className="calorie-input "
                         onChange={[Function]}
                         placeholder="to"
+                        type="number"
                         value={undefined}
                   />
             </div>
             <button
+                  disabled={true}
                   onClick={[Function]}
             >
                   Search
@@ -1181,16 +1187,19 @@ ShallowWrapper {
                                         className="calorie-input "
                                         onChange={[Function]}
                                         placeholder="from"
+                                        type="number"
                                         value={undefined}
                               />
                               <input
                                         className="calorie-input "
                                         onChange={[Function]}
                                         placeholder="to"
+                                        type="number"
                                         value={undefined}
                               />
                     </div>
                     <button
+                              disabled={true}
                               onClick={[Function]}
                     >
                               Search
@@ -1243,16 +1252,19 @@ ShallowWrapper {
                                         className="calorie-input "
                                         onChange={[Function]}
                                         placeholder="from"
+                                        type="number"
                                         value={undefined}
                               />
                               <input
                                         className="calorie-input "
                                         onChange={[Function]}
                                         placeholder="to"
+                                        type="number"
                                         value={undefined}
                               />
                     </div>
                     <button
+                              disabled={true}
                               onClick={[Function]}
                     >
                               Search
