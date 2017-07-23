@@ -11,6 +11,10 @@ const DEFAULT_STATE = {
   clientErrorMessage: '',
 };
 
+if (localStorage.getItem("state") !== null) {
+  DEFAULT_STATE.favourites = JSON.parse(localStorage.getItem("state")).favourites;
+}
+
 export default (state = DEFAULT_STATE, action) => {
   switch(action.type) {
 
